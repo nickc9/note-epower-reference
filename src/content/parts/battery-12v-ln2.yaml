@@ -1,0 +1,46 @@
+name_en: "12V Auxiliary Battery — LN2 (X, Medalist, NISMO, NISMO S)"
+name_jp: "補機バッテリー（LN2）"
+system: electrical
+oem_number: "LN2 (EN/DIN format, 60 Ah class) — genuine Nissan number unconfirmed"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE13"]
+  grades: ["X", "Medalist", "e-POWER NISMO", "e-POWER NISMO S"]
+  years: "2016-2020"
+alternatives:
+  - brand: "GS Yuasa"
+    number: "ECO.R ENJ-375LN2-IS"
+    note: "Idling-stop (EFB) rated, 60 Ah, 242x175x190 mm — sold specifically as Note e-POWER HE12 fitment"
+  - brand: "Panasonic"
+    number: "N-370LN2/PA (Caos)"
+    note: "Panasonic official fitment chart entry for e-POWER grades other than base S"
+  - brand: "Bosch"
+    number: "Black EFB BLE-60-L2"
+    note: "EFB, 242x175x190 mm, 16.1 kg — used in an owner DIY replacement log for a DAA-HE12"
+  - brand: "AC Delco"
+    number: "Premium EN LN2"
+    note: "Used as replacement in an owner log (original G&Yu LN2 lasted ~3 yr 9 mo)"
+  - brand: "G&Yu"
+    number: "ecoba-HV HV-L2"
+    note: "Hybrid-auxiliary LN2, ~15% more capacity than OEM, sold as direct HE12 fit"
+confidence: verified
+sources:
+  - url: "https://faq2.nissan.co.jp/faq/show/13808?site_domain=default"
+    note: "Official Nissan FAQ: LN1 (50 Ah) for base e-POWER S grade only; LN2 (60 Ah) for all other e-POWER configurations incl. 4WD"
+  - url: "https://www.rakuten.ne.jp/gold/hakuraishop/tk/p5/panasonic/nissan/b5500/s263d1.html"
+    note: "Panasonic official fitment chart: e-POWER non-S grades = N-370LN2/PA (LN2)"
+  - url: "https://shop.kts-web.com/products/enj-375ln2-is-qq-e-9400k"
+    note: "GS Yuasa ENJ-375LN2-IS sold explicitly for Note e-POWER HE12"
+price_jpy: 15000
+notes: >-
+  The e-POWER uses a European EN/DIN (LN) format battery, NOT a JIS size —
+  unlike petrol E12 Notes. The LN2 fitment class for non-S grades is verified
+  (Nissan FAQ + Panasonic chart agree); the genuine Nissan part number itself
+  (24410-xxxxx) could not be confirmed, and one forum post reports the factory
+  battery as Atlas-branded "24410 0542R" (unconfirmed). Use an EFB /
+  idling-stop-rated battery — standard flooded types are not suited to
+  e-POWER charge cycling. Located under the boot floor with a hydrogen vent
+  hose that MUST be reconnected — see the replacement guide. One retailer
+  lists LN1 for "Nismo S" — this appears to confuse the base "e-POWER S"
+  grade with "NISMO S"; the weight of catalogue evidence says NISMO/NISMO S
+  take LN2. Check the label on your installed battery before ordering.

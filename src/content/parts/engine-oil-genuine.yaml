@@ -1,0 +1,26 @@
+name_en: "Engine Oil — Nissan Genuine SN Strong Save X 0W-20 (4 L)"
+name_jp: "エンジンオイル（日産純正 SNストロングセーブ・X 0W-20）"
+system: fluids
+oem_number: "KLAN0-00204"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Nissan Genuine"
+    number: "KLAP0-00204"
+    note: "SP Strong Save X 0W-20 — newer API SP-grade genuine oil; fine as an upgrade, SN is the period-correct spec for a 2018 car"
+confidence: probable
+sources:
+  - url: "https://store.shopping.yahoo.co.jp/carweb2/nissan-parts000214.html"
+    note: "JP retailer: 日産純正 KLAN0-00204 SNストロングセーブ・X 0W-20, 4 L can"
+  - url: "https://www.monotaro.com/g/03063752/"
+    note: "MonotaRO: KLAN0-00204 Strong Save X SN 0W-20 (Pitwork/Nissan)"
+price_jpy: 3500
+notes: >-
+  Spec for the HR12DE e-POWER generator engine: SAE 0W-20, API SN / ILSAC.
+  Any quality 0W-20 meeting API SN or later is suitable — this entry documents
+  the genuine product. Do not confuse with Nissan "E Special" KLAN6-05304,
+  which is 5W-30 and not the correct viscosity for this engine. Capacity:
+  3.2 L drain-and-fill, 3.4 L with filter change.

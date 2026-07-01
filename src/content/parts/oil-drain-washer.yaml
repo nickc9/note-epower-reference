@@ -1,0 +1,27 @@
+name_en: "Oil Drain Plug Washer (Gasket)"
+name_jp: "ドレンパッキン / ドレンワッシャー"
+system: filters
+oem_number: "11026-01M02"
+superseded_numbers:
+  - "11026-01M00"
+  - "11026-JA00A"
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Pitwork"
+    number: "AY740-NS002"
+    note: "Cited as cross-reference to 11026-01M02 in JP retailer compatibility notes"
+confidence: probable
+sources:
+  - url: "https://www.monotaro.com/p/2942/4763/"
+    note: "MonotaRO lists 11026-01M02 as the Nissan oil pan drain gasket"
+  - url: "https://item.rakuten.co.jp/dreammax/184/"
+    note: "JP retailer: generic Nissan drain washer, 12 mm ID x 18 mm OD x 3.0 mm"
+price_jpy: 100
+notes: >-
+  Single-use — replace at every oil change (both owner DIY sources are
+  explicit about this). 12 mm ID x 18 mm OD x 3.0 mm thick; a very widely
+  shared Nissan washer across decades of models. Not explicitly tied to HE12
+  by any one source, hence probable.

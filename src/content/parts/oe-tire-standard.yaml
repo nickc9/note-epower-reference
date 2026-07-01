@@ -1,0 +1,25 @@
+name_en: "OE Tire — standard grades: 185/65R15 88S"
+name_jp: "タイヤ（標準グレード）"
+system: tires-wheels
+oem_number: "185/65R15 88S (size spec — tires have no Nissan part number)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["S", "X", "Medalist", "Autech"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Bridgestone"
+    number: "B250 185/65R15"
+    note: "Cited as the factory-fitted tire on standard grades (single source — probable)"
+confidence: verified
+sources:
+  - url: "https://spectank.jp/whl/002111865.html"
+    note: "Spec table for e-POWER S (DAA-HE12): 185/65R15, 15x5.5J, ET40"
+  - url: "https://wheel-size.jp/size/nissan/note/e12-2016-2022/"
+    note: "Confirms 185/65R15 88S as OE for the 1.2 hybrid DAA-HE12"
+notes: >-
+  Wheel: 15 x 5.5J, ET40, PCD 4x100, hub bore 60 mm (bore single-source,
+  probable). Not the NISMO/NISMO S size — those run 195/55R16 (see separate
+  entry). Beware multi-region tire databases listing 16-17 inch fitments for
+  "Note NISMO S": those belong to the older petrol E12 NISMO S or overseas
+  variants, not the JDM HE12 e-POWER.

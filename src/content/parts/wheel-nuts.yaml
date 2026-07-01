@@ -1,0 +1,25 @@
+name_en: "Wheel (Lug) Nuts — M12 x 1.25 taper seat"
+name_jp: "ホイールナット"
+system: tires-wheels
+oem_number: "M12 x 1.25, 60° taper seat (spec — genuine nut number not confirmed)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Nissan Genuine"
+    number: "M12x1.25 alloy-wheel nut (20-pack, Amazon.co.jp B071ZZ8BNJ)"
+    note: "Genuine alloy-wheel nut in the correct thread; listing is generic Nissan, not HE12-specific"
+confidence: probable
+sources:
+  - url: "https://www.amazon.co.jp/dp/B071ZZ8BNJ"
+    note: "Nissan genuine alloy wheel nut, M12 x 1.25"
+  - url: "https://yk-base.com/wheel-nut-tightening-torque-and-torque-wrench/"
+    note: "108 N·m (11 kgf·m) torque compiled from Nissan owner's manuals; explicitly lists Note as a covered model"
+notes: >-
+  Nissan uses 1.25 mm thread pitch (Toyota/Honda use 1.5 — not
+  interchangeable) with a 60° taper seat. Tightening torque 108 N·m — well
+  corroborated but not read directly from a Nissan-hosted HE12 manual page,
+  hence probable. Aftermarket wheels may need different seat types — check
+  the wheel manufacturer's requirement.

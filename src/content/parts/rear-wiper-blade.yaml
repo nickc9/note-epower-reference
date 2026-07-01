@@ -1,0 +1,24 @@
+name_en: "Rear Wiper Blade — 305 mm"
+name_jp: "リヤワイパーブレード"
+system: wipers
+oem_number: "305 mm blade — genuine Nissan number unconfirmed"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
+  grades: ["all"]
+  years: "2012-2021"
+alternatives:
+  - brand: "NWB"
+    number: "GR41-TN30G"
+    note: "Rear refill rubber, 6 mm width, explicit E12-family fitment incl. e-POWER"
+confidence: probable
+sources:
+  - url: "https://faq2.nissan.co.jp/faq/show/13810?category_id=67&site_domain=default"
+    note: "Official Nissan FAQ: rear wiper 305 mm for the E12 family"
+  - url: "https://www.amazon.co.jp/dp/B0FG758VMW"
+    note: "NWB refill set listing (front pair + rear GR41-TN30G) for E12/HE12/NE12/SNE12"
+price_jpy: 1000
+notes: >-
+  Length (305 mm) verified via Nissan FAQ; the genuine blade part number was
+  not found during research, so order by the NWB refill number or by length.
+  Refill width is 6 mm (front refills are 10 mm — don't mix them up).

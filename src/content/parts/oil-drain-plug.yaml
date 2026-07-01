@@ -1,0 +1,29 @@
+name_en: "Oil Pan Drain Plug"
+name_jp: "ドレンプラグ / ドレンボルト"
+system: filters
+oem_number: "11128-01M00"
+superseded_numbers:
+  - "11128-01M0B"
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "PIAA"
+    number: "B22"
+    note: "SAFETY drain plug, M12 x 1.25, supplied with washer; explicitly cross-referenced to 11128-01M00"
+  - brand: "ATS"
+    number: "R7A58-15"
+    note: "Magnetic neodymium drain bolt, M12 P1.25 H12; listings target Serena/March HR12DE (same engine family)"
+confidence: probable
+sources:
+  - url: "https://www.nissanpartsdeal.com/parts/nissan-plug-drain~11128-01m00.html"
+    note: "Confirms part number and supersession to 11128-01M0B across Nissan small-engine models"
+  - url: "https://www.amazon.co.jp/dp/B00ALO2DAK"
+    note: "PIAA B22 aftermarket drain plug states genuine cross-ref 11128-01M00 for Nissan"
+price_jpy: 300
+notes: >-
+  Thread M12 x P1.25. No source explicitly names HE12 + this number together,
+  but the drain plug spec is consistent across the whole HR12DE/EM57 engine
+  family (Note/March/Serena) — flagged probable rather than verified.
+  Tightening torque approx. 35 N·m (owner-sourced, see oil change guide).

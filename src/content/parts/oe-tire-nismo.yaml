@@ -1,0 +1,27 @@
+name_en: "OE Tire — NISMO / NISMO S: 195/55R16 87V"
+name_jp: "タイヤ（NISMO・NISMO S）"
+system: tires-wheels
+oem_number: "195/55R16 87V (size spec — tires have no Nissan part number)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["e-POWER NISMO", "e-POWER NISMO S"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Yokohama"
+    number: "DNA S.Drive 195/55R16"
+    note: "The factory-fitted tire on both NISMO and NISMO S"
+confidence: verified
+sources:
+  - url: "https://tire.bridgestone.co.jp/search/car/4/369/4779/16536/19037/"
+    note: "Bridgestone JP fitment database: e-POWER NISMO 195/55R16 87V"
+  - url: "https://tire.bridgestone.co.jp/search/car/4/369/4784/16571/19072/"
+    note: "Bridgestone JP fitment database: e-POWER NISMO S BLACK LIMITED 195/55R16 87V, 6.5J rim"
+  - url: "https://clicccar.com/2019/01/23/687652/"
+    note: "Confirms NISMO and NISMO S share identical Yokohama DNA S.Drive 195/55R16"
+notes: >-
+  Identical size and OE tire on NISMO and NISMO S. Wheel: 16 x 6.5J, ET46
+  (+46 mm inset), PCD 4x100, hub bore 60 mm (bore single-source, probable).
+  Door placard pressure 230 kPa front / 210 kPa rear (see wheels & tires
+  guide for the caveat on NISMO-specific placard confirmation). No spare
+  wheel is carried — puncture repair kit only.

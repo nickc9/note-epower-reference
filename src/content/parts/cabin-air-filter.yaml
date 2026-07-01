@@ -1,24 +1,34 @@
-name_en: "PLACEHOLDER Cabin Air Filter"
-name_jp: "エアコンフィルター（仮）"
+name_en: "Cabin (A/C) Air Filter"
+name_jp: "エアコンフィルター"
 system: filters
-oem_number: "27891-3VA0A"
-superseded_numbers: []
+oem_number: "27277-1HD0A"
+superseded_numbers:
+  - "27277-1HE0E"
+  - "27277-1HD0B"
 applicability:
-  chassis: ["HE12"]
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
   grades: ["all"]
   years: "2016-2020"
 alternatives:
-  - brand: "Denso"
-    number: "PLACEHOLDER-5678"
-    note: "PLACEHOLDER cross-reference, unverified"
-confidence: probable
+  - brand: "Pitwork"
+    number: "AY684-NS018"
+    note: "Base grade — pollen blocking (花粉対応タイプ)"
+  - brand: "Pitwork"
+    number: "AY685-NS018"
+    note: "Mid grade — pollen + odor + allergen treatment"
+  - brand: "Pitwork"
+    number: "AY686-NS018-01"
+    note: "Premium grade — PM2.5/PM1.0 filtration + vitamin-C release"
+confidence: verified
 sources:
-  - url: "https://www.nissan-parts.eu/"
-    note: "PLACEHOLDER source - replace with verified dealer parts diagram"
-  - url: "https://www.amayama.com/"
-    note: "PLACEHOLDER secondary source"
-price_jpy: 2400
-notes: >
-  PLACEHOLDER DATA. This entry is a scaffold example only and has not been
-  verified against a real parts catalog or dealer diagram. Do not order
-  based on this number.
+  - url: "https://www.monotaro.com/p/6395/7592/"
+    note: "MonotaRO listing for genuine 27277-1HD0A filter kit"
+  - url: "https://www.amazon.co.jp/s?k=AY684-NS018+27277-1HD0A"
+    note: "Amazon.co.jp Pitwork listings pairing AY684/685/686-NS018 with genuine 27277-1HD0A for Note E12-series incl. HE12"
+price_jpy: 2000
+notes: >-
+  Shared across the whole second-generation Note family (E12/NE12/HE12/SNE12).
+  All three Pitwork grades cross-reference to the same genuine number — pick
+  by filtration level. Denso (DCC2014) and Bosch Aeristo (AF-N11) are often
+  cited as compatible but could not be confirmed from a primary listing during
+  research, so they are deliberately not listed as alternatives here.

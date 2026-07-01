@@ -1,62 +1,81 @@
 ---
-title: "PLACEHOLDER Engine Oil and Filter Change"
-description: "PLACEHOLDER walkthrough for changing the HR12DE generator engine oil and filter on a Note e-POWER (HE12). Scaffold example only — not yet verified."
+title: "Engine Oil & Filter Change"
+description: "Changing the HR12DE generator engine's oil and filter on the Note e-POWER (HE12) — spec, capacities, torques, and the e-POWER-specific safety steps."
 difficulty: easy
-time_minutes: 30
-interval: "Every 10,000 km / 12 months"
+time_minutes: 45
+interval: "12 months / 15,000 km (6 months / 7,500 km severe use)"
 tools:
-  - "10mm socket"
-  - "Oil filter wrench"
+  - "14mm socket or ring spanner (drain plug)"
+  - "Oil filter wrench (approx. 65-67mm cap type)"
+  - "Torque wrench (20-50 Nm range)"
   - "Drain pan (min. 4 L)"
-  - "Torque wrench (5-50 Nm range)"
+  - "Jack + axle stands or ramps"
+  - "Funnel, gloves, rags"
 parts:
+  - engine-oil-genuine
   - engine-oil-filter
+  - oil-drain-washer
 torque_specs:
-  - fastener: "Drain plug"
-    nm: 34
-  - fastener: "Oil filter"
-    nm: 18
+  - fastener: "Drain plug (approx. — owner-sourced, not factory-manual verified)"
+    nm: 35
 fluids:
-  - name: "0W-20 engine oil"
-    capacity: "3.0 L with filter"
+  - name: "0W-20 engine oil, API SN or later"
+    capacity: "3.2 L drain-and-fill / 3.4 L with filter"
 phase: 1
 draft: false
 ---
 
-> **PLACEHOLDER CONTENT.** This guide is a scaffold example only. The steps,
-> torque values, and fluid capacities below have not been verified against a
-> factory service manual and should not be used to perform actual
-> maintenance. Real, verified guides will replace this content.
-
 ## Overview
 
-This is a placeholder maintenance guide for the HR12DE generator engine
-found in the JDM Nissan Note e-POWER (HE12). It demonstrates how a real
-guide will be structured once verified data is available.
+The HR12DE in the e-POWER never drives the wheels — it's a generator. It
+still needs regular oil changes: Nissan Japan specifies the **same 12
+month / 15,000 km interval** as the petrol Note (7,500 km / 6 months for
+severe use such as repeated trips under 8 km — which describes a lot of
+e-POWER city driving, so many owners change yearly regardless of low
+mileage).
 
-## Before you start
+**Oil spec: SAE 0W-20, API SN (or later SP), ILSAC.** Genuine product is
+Nissan SN Strong Save X. Do not use 5W-30 "for a Note" — that figure
+belongs to other engines in the Note range (HR12DDR supercharged / HR16DE
+petrol NISMO S).
 
-- Warm the engine for a few minutes so the oil drains freely, then let it
-  cool slightly before working underneath the car.
-- Make sure you have a drain pan with sufficient capacity and a way to
-  responsibly dispose of the used oil.
+## e-POWER safety notes — read first
+
+- **The engine can start by itself whenever the car is in READY state**,
+  even parked, whenever the traction battery wants charge. Before working:
+  power the car **fully OFF** (not READY), and take the Intelligent Key
+  away from the car.
+- The engine may not have run recently even if you just drove — for
+  easier draining, run the engine first (e.g. select CHARGE mode or let it
+  fire during a short drive), then power off and let it cool a few
+  minutes.
 
 ## Steps
 
-1. Raise and safely support the front of the vehicle.
-2. Locate the drain plug on the underside of the oil pan and place the
-   drain pan beneath it.
-3. Remove the drain plug and allow the oil to fully drain.
-4. Remove the old oil filter with an oil filter wrench.
-5. Lightly oil the gasket of the new filter and hand-tighten it into place,
-   then torque to spec.
-6. Reinstall the drain plug with a new washer and torque to spec.
-7. Refill with the specified oil to the correct capacity.
-8. Start the engine, check for leaks, and confirm the oil level once
-   settled.
+1. Warm the engine (see note above), power the car fully off, and raise
+   and support the front of the car on stands or ramps. See the
+   [wheels & tires guide](../wheels-and-tires/) for jacking-point cautions.
+2. Place the drain pan under the drain plug on the oil pan and remove the
+   plug. Let it drain fully (5-10 minutes).
+3. While draining, remove the old oil filter with the filter wrench. Some
+   oil will come with it — keep the pan underneath.
+4. Smear clean oil on the new filter's gasket. Hand-tighten until the
+   gasket seats, then a further **3/4 turn** with the wrench (standard
+   Nissan spin-on practice — no factory N·m figure found for the filter).
+5. Fit the drain plug with a **new washer** (single-use — always replace)
+   and torque to approx. **35 N·m**. This figure comes from two owner DIY
+   logs, not a factory manual — snug with a short wrench, don't gorilla it.
+6. Refill through the filler cap: **3.4 L** with a filter change. Pour
+   ~3 L, wait, then check the dipstick and top up to the upper mark.
+7. Power the car to READY, force the engine to run (CHARGE mode does this
+   promptly), check for leaks at the plug and filter, then power off,
+   wait a few minutes, and re-check the level.
 
-## PLACEHOLDER note
+## Notes
 
-Replace this guide with a verified procedure, including confirmed torque
-specs, fluid capacity, and any HE12-specific quirks (e.g. e-POWER
-generator engine access differences vs. standard HR12DE applications).
+- Dispose of used oil responsibly (in Japan: 廃油処理箱 disposal boxes from
+  any home center; elsewhere: council recycling / parts stores).
+- The e-POWER's engine bay is tight; the filter is accessible from below
+  on most cars.
+- Same parts and spec for all grades — the NISMO S tune changes mapping,
+  not the oil system.

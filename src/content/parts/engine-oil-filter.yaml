@@ -1,26 +1,42 @@
-name_en: "PLACEHOLDER Engine Oil Filter"
-name_jp: "オイルエレメント（仮）"
-system: engine
-oem_number: "15208-65F0E"
+name_en: "Engine Oil Filter"
+name_jp: "オイルエレメント / オイルフィルター"
+system: filters
+oem_number: "15208-65F00"
 superseded_numbers:
+  - "15208-65F01"
+  - "15208-65F0A"
+  - "15208-65F0B"
+  - "15208-65F0C"
   - "15208-65F0D"
+  - "15208-65F0E"
 applicability:
-  chassis: ["HE12"]
+  chassis: ["HE12", "SNE12"]
   grades: ["all"]
   years: "2016-2020"
 alternatives:
-  - brand: PIAA
-    number: "Z1"
-    note: "PLACEHOLDER cross-reference, unverified"
-  - brand: "Denso"
-    number: "PLACEHOLDER-1234"
-    note: ""
-confidence: unconfirmed
+  - brand: "Pitwork"
+    number: "AY100-NS004"
+    note: "Genuine (Nissan aftermarket brand) cross-reference — the number most JDM retailers list for the HE12 e-POWER"
+  - brand: "HKS"
+    number: "52009-AK005"
+    note: "Hybrid Sports oil filter, listed for Note E12/HE12 HR12DE and Serena HFC27 HR12DE-EM57 (same engine family)"
+  - brand: "BLITZ"
+    number: "18704-63 / 18704-64"
+    note: "Racing Oil Filter; product listing explicitly covers NOTE e-POWER HE12/SNE12 HR12DE+EM57 (-64 for NISMO HE12)"
+  - brand: "AC Delco"
+    number: "PF307J"
+    note: "Cross-reference sheet ties 15208-65F00 to AY100-NS004"
+confidence: verified
 sources:
-  - url: "https://www.amayama.com/"
-    note: "PLACEHOLDER source - replace with verified Amayama/parts-catalog listing"
-price_jpy: 1200
-notes: >
-  PLACEHOLDER DATA. This entry is a scaffold example only and has not been
-  verified against a real parts catalog or dealer diagram. Do not order
-  based on this number.
+  - url: "https://www.norauto.jp/c/maintenance/oilfilter/pf307j"
+    note: "AC Delco cross-reference: 15208-65F00 = AY100-NS004 (Nissan)"
+  - url: "https://www.nissanpartsdeal.com/parts/nissan-oil-filter~15208-65f0e.html"
+    note: "US Nissan catalogue confirms 15208-65F0E as the current superseding number for the 65F00/65F01/65F0A-D family"
+price_jpy: 900
+notes: >-
+  Approx. 75 mm tall x 70 mm OD, M20 x P1.5 thread. JDM retailers consistently
+  use 15208-65F00 (with Pitwork AY100-NS004 as the genuine cross-ref) for the
+  HE12; US catalogues show 15208-65F0E as the latest supersession of the same
+  filter family. Fitment of this filter family to the HE12 HR12DE+EM57 is
+  confirmed by 3+ independent JDM-specific listings (BLITZ, HKS, Pitwork
+  retailers). If ordering genuine from a JP vendor, ask for AY100-NS004.

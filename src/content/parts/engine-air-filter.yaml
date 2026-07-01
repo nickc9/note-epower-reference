@@ -1,0 +1,33 @@
+name_en: "Engine Air Filter Element"
+name_jp: "エアクリーナーエレメント / エアフィルター"
+system: filters
+oem_number: "16546-5WK0A"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Pitwork"
+    number: "AY120-NS067"
+    note: "Genuine cross-ref; product explicitly titled 'PITWORK NISSAN NOTE (HE12/SNE12) Air Filter NS067'"
+  - brand: "MAHLE"
+    number: "LX5795"
+    note: "Listing states fitment to Note e-POWER HE12/SNE12; MAHLE is reportedly the OE filter manufacturer for this model"
+  - brand: "AZUMI"
+    number: "A22027"
+    note: "Cross-refs 16546-5WK0A / AY120-NS067"
+  - brand: "G-PARTS"
+    number: "LA-2545V"
+    note: "Explicitly fits DAA-HE12 (Nov 2016 – Dec 2020)"
+confidence: verified
+sources:
+  - url: "https://www.amazon.co.jp/dp/B0CZ8QX8MB"
+    note: "Pitwork AY120-NS067 listing titled for NOTE HE12/SNE12"
+  - url: "https://brettstruck.com.au/products/a2201-air-filter-nissan-azumi-filters-australia-a22027-nissan-16546-5wk0a...ay120ns067"
+    note: "Independent AU retailer cross-reference confirms the 16546-5WK0A / AY120-NS067 pairing"
+price_jpy: 1500
+notes: >-
+  The highest-confidence part number in the Phase 1 research — corroborated by
+  many independent listings from different countries, all citing HE12/SNE12
+  HR12DE-EM57 fitment explicitly.

@@ -1,0 +1,25 @@
+name_en: "12V Auxiliary Battery — LN1 (base e-POWER S grade only)"
+name_jp: "補機バッテリー（LN1・e-POWER S専用）"
+system: electrical
+oem_number: "LN1 (EN/DIN format, 50 Ah class) — genuine Nissan number unconfirmed"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["e-POWER S (base grade — NOT NISMO S)"]
+  years: "2016-2020"
+alternatives:
+  - brand: "GS Yuasa"
+    number: "ECO.R ENJ-355LN1"
+    note: "Sold specifically for Note e-POWER S (HE12)"
+confidence: probable
+sources:
+  - url: "https://faq2.nissan.co.jp/faq/show/13808?site_domain=default"
+    note: "Official Nissan FAQ: LN1, 50 Ah class, for the e-POWER S grade only"
+  - url: "https://shop.kts-web.com/products/enj-355ln1-qq-e-9097k"
+    note: "GS Yuasa ENJ-355LN1 sold for Note e-POWER S HE12"
+price_jpy: 13000
+notes: >-
+  Included to prevent a common ordering mistake: "e-POWER S" (the cheapest
+  base grade) is not "e-POWER NISMO S". Only the base S grade takes the
+  smaller LN1 — NISMO and NISMO S take the LN2 (see the LN2 entry). Some
+  retail listings mislabel LN1 batteries as "Nismo S" fitment.
