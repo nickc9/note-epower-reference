@@ -1,0 +1,13 @@
+---
+interface Props {
+  confidence: 'verified' | 'probable' | 'unconfirmed';
+}
+const { confidence } = Astro.props;
+const labels: Record<Props['confidence'], string> = {
+  verified: 'Verified',
+  probable: 'Probable',
+  unconfirmed: 'Unconfirmed',
+};
+---
+
+<span class={`badge badge-${confidence}`}>{labels[confidence]}</span>

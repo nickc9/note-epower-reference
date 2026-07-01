@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const repo = 'nickc9/note-epower-reference';
+const issuesListUrl = `https://github.com/${repo}/issues?q=is%3Aissue+is%3Aopen+label%3Aalternative-suggestion`;
+---
+
+<BaseLayout title="About" description="What this site is, the confidence-flag system, and how to contribute.">
+  <h1>About this site</h1>
+
+  <section class="prose">
+    <p>
+      This site is a community-researched reference for owners of the JDM
+      Nissan Note e-POWER, chassis code HE12 (2016&ndash;2020). It collects
+      OEM part numbers, aftermarket cross-references, and maintenance
+      guides in one searchable place, aimed at owners outside Japan who
+      often struggle to find accurate part numbers for a JDM-only model.
+    </p>
+
+    <h2>The confidence-flag system</h2>
+    <p>Every part entry carries one of three confidence flags:</p>
+    <ul>
+      <li>
+        <span class="badge badge-verified">Verified</span>
+        &mdash; confirmed against an official Nissan parts diagram, dealer
+        lookup, or a direct match against the physical part/chassis plate.
+      </li>
+      <li>
+        <span class="badge badge-probable">Probable</span>
+        &mdash; supported by a reputable secondary source (e.g. a parts
+        marketplace listing, forum consensus) but not yet cross-checked
+        against an official diagram.
+      </li>
+      <li>
+        <span class="badge badge-unconfirmed">Unconfirmed</span>
+        &mdash; a single, unverified source, or scaffold/placeholder data.
+        Treat with caution.
+      </li>
+    </ul>
+
+    <h2>Disclaimer</h2>
+    <p>
+      All data on this site is community-researched from public sources and
+      provided "as is," with no warranty of accuracy or fitness for a
+      particular vehicle. Part numbers can change between production runs,
+      grades, and markets. <strong>Always verify a part number against your
+      own VIN/chassis plate and an official parts diagram before
+      ordering.</strong> The maintainers are not responsible for
+      incorrect parts, damage, or injury resulting from use of this
+      information.
+    </p>
+
+    <h2>Community alternatives &amp; voting</h2>
+    <p>
+      Each part page has a <strong>Community alternatives</strong> section
+      where owners can suggest aftermarket cross-references that aren't yet
+      in the official database. The flow works like this:
+    </p>
+    <ol>
+      <li>
+        Click <strong>Suggest an alternative</strong> on a part page. This
+        opens a GitHub issue form pre-filled with that part's slug &mdash;
+        fill in the brand, part number, and any fitment notes.
+      </li>
+      <li>
+        Other owners can <strong>upvote</strong> good suggestions with a
+        &#128077; reaction on the issue. Votes are pulled live from GitHub
+        and shown next to each suggestion on the part page.
+      </li>
+      <li>
+        Maintainers periodically review well-supported suggestions and
+        promote them into the official alternatives table, crediting the
+        original source.
+      </li>
+    </ol>
+    <p>
+      Suggesting or voting requires a free
+      <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">GitHub account</a>.
+      You can also browse all open suggestions directly on
+      <a href={issuesListUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
+      without an account.
+    </p>
+
+    <h2>Contributing</h2>
+    <p>
+      This site is open source and built with Astro. Corrections, new part
+      entries, and new guides are welcome via pull request on
+      <a href={`https://github.com/${repo}`} target="_blank" rel="noopener noreferrer">GitHub</a>.
+      Parts live as YAML files under <code>src/content/parts/</code> and
+      guides as Markdown under <code>src/content/guides/</code>, each
+      validated against a schema at build time.
+    </p>
+  </section>
+</BaseLayout>

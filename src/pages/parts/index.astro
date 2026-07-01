@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
+import { getCollection } from 'astro:content';
+
+const allParts = await getCollection('parts');
+const base = import.meta.env.BASE_URL;
+
+const systemOrder = [
+  'engine',
+  'filters',
+  'electrical',
+  'wipers',
+  'tires-wheels',
+  'brakes',
+  'suspension',
+  'body',
+  'fluids',
+];
+
+const systems = [...new Set(allParts.map((p) => p.data.system))].sort(
+  (a, b) => systemOrder.indexOf(a) - systemOrder.indexOf(b),
+);
+
+const grouped = systems.map((system) => ({
+  system,
+  items: allParts
+    .filter((p) => p.data.system === system)
+    .sort((a, b) => a.data.name_en.localeCompare(b.data.name_en)),
+}));
+---
+
+<BaseLayout title="Parts" description="OEM part numbers for the JDM Nissan Note e-POWER (HE12), organized by system.">
+  <div class="section-heading">
+    <h1>Parts</h1>
+  </div>
+  <p>
+    Browse OEM part numbers by system. Each entry shows a confidence flag
+    &mdash;
+    <span class="badge badge-verified">Verified</span>
+    <span class="badge badge-probable">Probable</span>
+    <span class="badge badge-unconfirmed">Unconfirmed</span>
+    &mdash; see the <a href={`${base}about/`}>About page</a> for what these mean.
+  </p>
+
+  <div class="filter-bar" id="system-filter" role="group" aria-label="Filter by system">
+    <button type="button" class="active" data-system="all">All</button>
+    {systems.map((system) => (
+      <button type="button" data-system={system}>{system}</button>
+    ))}
+  </div>
+
+  {grouped.map(({ system, items }) => (
+    <div class="system-group" data-system-group={system}>
+      <h2>{system.replace('-', ' & ')}</h2>
+      <div class="card-grid">
+        {items.map((part) => (
+          <a class="card" href={`${base}parts/${part.id}/`}>
+            <h3>{part.data.name_en}</h3>
+            {part.data.name_jp && <div class="jp">{part.data.name_jp}</div>}
+            <div class="oem">{part.data.oem_number}</div>
+            <div class="meta">
+              <ConfidenceBadge confidence={part.data.confidence} />
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  ))}
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('#system-filter button');
+  const groups = document.querySelectorAll<HTMLElement>('[data-system-group]');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.system;
+
+      groups.forEach((group) => {
+        const match = target === 'all' || group.dataset.systemGroup === target;
+        group.style.display = match ? '' : 'none';
+      });
+    });
+  });
+</script>

@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DifficultyBadge from '../../components/DifficultyBadge.astro';
+import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
+import { getCollection, getEntries, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ data }) => !data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { data } = guide;
+const { Content } = await render(guide);
+const base = import.meta.env.BASE_URL;
+
+const partRefs = data.parts.map((slug: string) => ({ collection: 'parts' as const, id: slug }));
+const resolvedParts = partRefs.length > 0 ? await getEntries(partRefs) : [];
+---
+
+<BaseLayout title={data.title} description={data.description}>
+  <p class="breadcrumb"><a href={`${base}guides/`}>&larr; All guides</a></p>
+
+  {data.title.includes('PLACEHOLDER') && (
+    <p class="placeholder-flag">
+      This is placeholder scaffold content, not a verified procedure. Do not use it to perform actual maintenance.
+    </p>
+  )}
+
+  <div class="section-heading">
+    <h1>{data.title}</h1>
+  </div>
+  <p>{data.description}</p>
+
+  <div class="info-panel">
+    <dl>
+      <dt>Difficulty</dt>
+      <dd><DifficultyBadge difficulty={data.difficulty} /></dd>
+
+      <dt>Time</dt>
+      <dd>{data.time_minutes} minutes</dd>
+
+      {data.interval && (
+        <>
+          <dt>Interval</dt>
+          <dd>{data.interval}</dd>
+        </>
+      )}
+
+      {data.tools.length > 0 && (
+        <>
+          <dt>Tools</dt>
+          <dd>
+            <ul class="tag-list">
+              {data.tools.map((tool: string) => <li>{tool}</li>)}
+            </ul>
+          </dd>
+        </>
+      )}
+    </dl>
+
+    {data.torque_specs.length > 0 && (
+      <>
+        <h3>Torque specs</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Fastener</th>
+              <th>N&middot;m</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.torque_specs.map((spec: { fastener: string; nm: number }) => (
+              <tr>
+                <td>{spec.fastener}</td>
+                <td>{spec.nm}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+
+    {data.fluids.length > 0 && (
+      <>
+        <h3>Fluids</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Fluid</th>
+              <th>Capacity</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.fluids.map((fluid: { name: string; capacity: string }) => (
+              <tr>
+                <td>{fluid.name}</td>
+                <td>{fluid.capacity}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
+  </div>
+
+  {resolvedParts.length > 0 && (
+    <section>
+      <h2>Parts needed</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Part</th>
+            <th>OEM number</th>
+            <th>Confidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          {resolvedParts.map((part) => (
+            <tr>
+              <td><a href={`${base}parts/${part.id}/`}>{part.data.name_en}</a></td>
+              <td class="oem">{part.data.oem_number}</td>
+              <td><ConfidenceBadge confidence={part.data.confidence} /></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )}
+
+  <section class="prose">
+    <Content />
+  </section>
+</BaseLayout>

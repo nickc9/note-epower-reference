@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ConfidenceBadge from '../../components/ConfidenceBadge.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const parts = await getCollection('parts');
+  return parts.map((part) => ({
+    params: { slug: part.id },
+    props: { part },
+  }));
+}
+
+const { part } = Astro.props;
+const { data } = part;
+const { Content } = await render(part);
+const base = import.meta.env.BASE_URL;
+
+const repo = 'nickc9/note-epower-reference';
+const suggestUrl = `https://github.com/${repo}/issues/new?template=suggest-alternative.yml&labels=alternative-suggestion&part=${encodeURIComponent(part.id)}`;
+const issuesListUrl = `https://github.com/${repo}/issues?q=is%3Aissue+is%3Aopen+label%3Aalternative-suggestion`;
+---
+
+<BaseLayout title={data.name_en} description={`OEM number ${data.oem_number} for ${data.name_en} (Nissan Note e-POWER HE12).`}>
+  <p class="breadcrumb"><a href={`${base}parts/`}>&larr; All parts</a></p>
+
+  {data.name_en.includes('PLACEHOLDER') && (
+    <p class="placeholder-flag">
+      This is placeholder scaffold content, not verified data. Do not use it to order parts.
+    </p>
+  )}
+
+  <div class="section-heading">
+    <div>
+      <h1>{data.name_en}</h1>
+      {data.name_jp && <p class="jp">{data.name_jp}</p>}
+    </div>
+    <ConfidenceBadge confidence={data.confidence} />
+  </div>
+
+  <table>
+    <tbody>
+      <tr>
+        <th scope="row">System</th>
+        <td style="text-transform: capitalize;">{data.system.replace('-', ' & ')}</td>
+      </tr>
+      <tr>
+        <th scope="row">OEM number</th>
+        <td class="oem">{data.oem_number}</td>
+      </tr>
+      {data.superseded_numbers.length > 0 && (
+        <tr>
+          <th scope="row">Superseded numbers</th>
+          <td class="oem">{data.superseded_numbers.join(', ')}</td>
+        </tr>
+      )}
+      <tr>
+        <th scope="row">Chassis</th>
+        <td>{data.applicability.chassis.join(', ')}</td>
+      </tr>
+      <tr>
+        <th scope="row">Grades</th>
+        <td>{data.applicability.grades.join(', ')}</td>
+      </tr>
+      <tr>
+        <th scope="row">Years</th>
+        <td>{data.applicability.years}</td>
+      </tr>
+      {data.price_jpy != null && (
+        <tr>
+          <th scope="row">Approx. price</th>
+          <td>&yen;{data.price_jpy.toLocaleString()}</td>
+        </tr>
+      )}
+    </tbody>
+  </table>
+
+  {data.alternatives.length > 0 && (
+    <section>
+      <h2>Official alternatives</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Brand</th>
+            <th>Number</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.alternatives.map((alt) => (
+            <tr>
+              <td>{alt.brand}</td>
+              <td class="oem">{alt.number}</td>
+              <td>{alt.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )}
+
+  {data.notes && (
+    <section>
+      <h2>Notes</h2>
+      <p>{data.notes}</p>
+    </section>
+  )}
+
+  <section>
+    <h2>Sources</h2>
+    <ul>
+      {data.sources.map((source) => (
+        <li>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">{source.url}</a>
+          {source.note && <> &mdash; {source.note}</>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section id="community-alternatives" data-part-slug={part.id} data-suggest-url={suggestUrl} data-issues-url={issuesListUrl}>
+    <h2>Community alternatives</h2>
+    <p>
+      Suggestions from other owners, submitted via GitHub issue and ranked
+      by &#128077; votes. Well-supported suggestions get verified and
+      promoted into the official alternatives table above.
+    </p>
+    <div id="community-alternatives-list"></div>
+    <p id="community-alternatives-fallback" class="search-fallback" hidden>
+      Couldn't load live suggestions right now. You can still
+      <a href={issuesListUrl} target="_blank" rel="noopener noreferrer">browse suggestions on GitHub</a>.
+    </p>
+    <div class="button-row">
+      <a class="button secondary" href={suggestUrl} target="_blank" rel="noopener noreferrer">
+        Suggest an alternative
+      </a>
+    </div>
+  </section>
+
+  <section class="prose">
+    <Content />
+  </section>
+</BaseLayout>
+
+<script>
+  const REPO = 'nickc9/note-epower-reference';
+  const CACHE_MINUTES = 10;
+
+  interface Suggestion {
+    part: string;
+    brand: string;
+    number: string;
+    notes: string;
+    votes: number;
+    url: string;
+  }
+
+  function parseIssueBody(body: string): Partial<Record<'part' | 'brand' | 'part_number' | 'source_url' | 'notes', string>> {
+    // GitHub issue forms render each field as "### Label\n\nvalue\n\n"
+    const fieldLabels: Record<string, 'part' | 'brand' | 'part_number' | 'source_url' | 'notes'> = {
+      'part slug': 'part',
+      brand: 'brand',
+      'part number': 'part_number',
+      'where did you buy it / product link': 'source_url',
+      'fitment notes / experience': 'notes',
+    };
+
+    const result: Partial<Record<'part' | 'brand' | 'part_number' | 'source_url' | 'notes', string>> = {};
+    const sections = body.split(/^### /m).slice(1);
+    for (const section of sections) {
+      const [rawLabel, ...rest] = section.split('\n');
+      const label = rawLabel.trim().toLowerCase();
+      const key = fieldLabels[label];
+      if (!key) continue;
+      const value = rest.join('\n').trim();
+      if (value && value !== '_No response_') {
+        result[key] = value;
+      }
+    }
+    return result;
+  }
+
+  async function loadSuggestions(slug: string): Promise<Suggestion[] | null> {
+    const cacheKey = `alt-suggestions-cache-v1`;
+    const now = Date.now();
+
+    try {
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (now - parsed.fetchedAt < CACHE_MINUTES * 60 * 1000) {
+          return parsed.suggestions.filter((s: Suggestion) => s.part === slug);
+        }
+      }
+    } catch {
+      // ignore cache errors, fall through to fetch
+    }
+
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO}/issues?labels=alternative-suggestion&state=open&per_page=100`,
+      { headers: { Accept: 'application/vnd.github+json' } },
+    );
+
+    if (!res.ok) throw new Error(`GitHub API responded ${res.status}`);
+
+    const issues = await res.json();
+    const suggestions: Suggestion[] = [];
+
+    for (const issue of issues) {
+      if (issue.pull_request) continue;
+      const fields = parseIssueBody(issue.body || '');
+      if (!fields.part || !fields.brand || !fields.part_number) continue;
+      suggestions.push({
+        part: fields.part.trim(),
+        brand: fields.brand,
+        number: fields.part_number,
+        notes: fields.notes || '',
+        votes: issue.reactions?.['+1'] ?? 0,
+        url: issue.html_url,
+      });
+    }
+
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify({ fetchedAt: now, suggestions }));
+    } catch {
+      // sessionStorage might be unavailable (private browsing); ignore
+    }
+
+    return suggestions.filter((s) => s.part === slug);
+  }
+
+  async function init() {
+    const section = document.getElementById('community-alternatives');
+    const list = document.getElementById('community-alternatives-list');
+    const fallback = document.getElementById('community-alternatives-fallback');
+    if (!section || !list) return;
+
+    const slug = section.dataset.partSlug || '';
+
+    try {
+      const suggestions = await loadSuggestions(slug);
+      if (!suggestions || suggestions.length === 0) {
+        list.innerHTML = '<p class="jp">No community suggestions yet &mdash; be the first!</p>';
+        return;
+      }
+
+      suggestions.sort((a, b) => b.votes - a.votes);
+
+      const ul = document.createElement('ul');
+      ul.className = 'tag-list';
+      ul.style.display = 'block';
+
+      for (const s of suggestions) {
+        const li = document.createElement('li');
+        li.style.display = 'block';
+        li.style.marginBottom = '0.5rem';
+        li.style.padding = '0.6rem 0.8rem';
+
+        const title = document.createElement('div');
+        title.innerHTML = `<strong>${escapeHtml(s.brand)}</strong> &mdash; <span class="oem">${escapeHtml(s.number)}</span>`;
+        li.appendChild(title);
+
+        if (s.notes) {
+          const notes = document.createElement('div');
+          notes.className = 'jp';
+          notes.textContent = s.notes.length > 200 ? `${s.notes.slice(0, 200)}…` : s.notes;
+          li.appendChild(notes);
+        }
+
+        const voteLine = document.createElement('div');
+        const link = document.createElement('a');
+        link.href = s.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = `\u{1F44D} ${s.votes} · Vote on GitHub`;
+        voteLine.appendChild(link);
+        li.appendChild(voteLine);
+
+        ul.appendChild(li);
+      }
+
+      list.innerHTML = '';
+      list.appendChild(ul);
+    } catch (err) {
+      if (fallback) fallback.hidden = false;
+    }
+  }
+
+  function escapeHtml(str: string): string {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  init();
+</script>

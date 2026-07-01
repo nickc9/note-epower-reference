@@ -1,0 +1,52 @@
+name: Suggest an aftermarket alternative
+description: Suggest a cross-referenced aftermarket part for an existing entry on the site.
+title: "[Alternative] "
+labels:
+  - alternative-suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping grow the parts database! Fill in what you know
+        below. Other owners can upvote this suggestion with a 👍 reaction,
+        and well-supported suggestions get verified and promoted into the
+        official alternatives table.
+  - type: input
+    id: part
+    attributes:
+      label: Part slug
+      description: The slug from the part's page URL, e.g. `engine-oil-filter` (from `/parts/engine-oil-filter/`).
+      placeholder: engine-oil-filter
+    validations:
+      required: true
+  - type: input
+    id: brand
+    attributes:
+      label: Brand
+      description: The aftermarket brand you're suggesting.
+      placeholder: PIAA
+    validations:
+      required: true
+  - type: input
+    id: part_number
+    attributes:
+      label: Part number
+      description: The brand's part number for this item.
+      placeholder: Z1
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Where did you buy it / product link
+      description: Optional link to where you sourced this part.
+      placeholder: https://...
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Fitment notes / experience
+      description: Optional - anything worth knowing about fit, quality, or install.
+    validations:
+      required: false

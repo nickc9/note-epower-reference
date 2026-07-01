@@ -1,0 +1,24 @@
+name_en: "PLACEHOLDER Cabin Air Filter"
+name_jp: "エアコンフィルター（仮）"
+system: filters
+oem_number: "27891-3VA0A"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Denso"
+    number: "PLACEHOLDER-5678"
+    note: "PLACEHOLDER cross-reference, unverified"
+confidence: probable
+sources:
+  - url: "https://www.nissan-parts.eu/"
+    note: "PLACEHOLDER source - replace with verified dealer parts diagram"
+  - url: "https://www.amayama.com/"
+    note: "PLACEHOLDER secondary source"
+price_jpy: 2400
+notes: >
+  PLACEHOLDER DATA. This entry is a scaffold example only and has not been
+  verified against a real parts catalog or dealer diagram. Do not order
+  based on this number.

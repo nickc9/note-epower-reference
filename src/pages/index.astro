@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const parts = await getCollection('parts');
+const guides = await getCollection('guides', ({ data }) => !data.draft);
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Note e-POWER Reference">
+  <section class="hero">
+    <h1>JDM Nissan Note e-POWER (HE12) Reference</h1>
+    <p>
+      A community-researched reference for owners of the JDM Nissan Note
+      e-POWER, chassis code <strong>HE12</strong> (2016&ndash;2020
+      generation). This particular site is built around a 2018 Note
+      e-POWER: an <strong>HR12DE</strong> 1.2L generator engine paired with
+      the <strong>EM57</strong> electric drive motor, in Nissan's series
+      hybrid "e-POWER" configuration. Here you'll find OEM part numbers,
+      cross-referenced aftermarket alternatives, and maintenance guides
+      collected from owner forums, parts catalogs, and dealer diagrams.
+    </p>
+    <div class="button-row">
+      <a class="button" href={`${base}parts/`}>Browse Parts</a>
+      <a class="button secondary" href={`${base}guides/`}>Browse Guides</a>
+      <a class="button secondary" href={`${base}about/`}>About this site</a>
+    </div>
+  </section>
+
+  <section id="search">
+    <h2>Search</h2>
+    <div id="pagefind-search"></div>
+    <p id="search-fallback" class="search-fallback" hidden>
+      Search is unavailable in dev mode &mdash; it's generated at build time
+      by Pagefind. Run <code>npm run build</code> to try it locally, or use
+      site search on the deployed version.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>Parts</h2>
+      <a href={`${base}parts/`}>View all &rarr;</a>
+    </div>
+    <p>{parts.length} part{parts.length === 1 ? '' : 's'} documented so far, organized by system: engine, filters, electrical, wipers, tires &amp; wheels, brakes, suspension, body, and fluids.</p>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <h2>Guides</h2>
+      <a href={`${base}guides/`}>View all &rarr;</a>
+    </div>
+    <p>{guides.length} maintenance guide{guides.length === 1 ? '' : 's'} covering routine service, with torque specs, fluid capacities, and the parts you'll need.</p>
+  </section>
+</BaseLayout>
+
+<script is:inline define:vars={{ base: import.meta.env.BASE_URL }}>
+  async function initSearch() {
+    const mount = document.getElementById('pagefind-search');
+    const fallback = document.getElementById('search-fallback');
+    if (!mount) return;
+
+    const cssHref = `${base}pagefind/pagefind-ui.css`;
+    const jsHref = `${base}pagefind/pagefind-ui.js`;
+
+    try {
+      const res = await fetch(jsHref, { method: 'HEAD' });
+      if (!res.ok) throw new Error('pagefind index not found');
+
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = cssHref;
+      document.head.appendChild(link);
+
+      const script = document.createElement('script');
+      script.src = jsHref;
+      script.onload = () => {
+        // @ts-ignore - PagefindUI is injected by the loaded script
+        new PagefindUI({ element: '#pagefind-search', showSubResults: true });
+      };
+      document.body.appendChild(script);
+    } catch (err) {
+      if (fallback) fallback.hidden = false;
+    }
+  }
+
+  initSearch();
+</script>
