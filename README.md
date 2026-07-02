@@ -1,4 +1,4 @@
-# Note e-POWER Reference
+# Note e-POWER Wiki
 
 A community-researched reference site for JDM Nissan Note e-POWER (HE12)
 owners: OEM part numbers, aftermarket cross-references, and maintenance

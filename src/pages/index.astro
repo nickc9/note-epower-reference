@@ -4,13 +4,20 @@ import { getCollection } from 'astro:content';
 
 const parts = await getCollection('parts');
 const guides = await getCollection('guides', ({ data }) => !data.draft);
+const verifiedParts = parts.filter((p) => p.data.confidence === 'verified');
 
 const base = import.meta.env.BASE_URL;
+
+const stats = [
+  { value: parts.length, label: `Part${parts.length === 1 ? '' : 's'} documented`, href: `${base}parts/` },
+  { value: verifiedParts.length, label: 'Verified against a source', href: `${base}parts/` },
+  { value: guides.length, label: `Maintenance guide${guides.length === 1 ? '' : 's'}`, href: `${base}guides/` },
+];
 ---
 
-<BaseLayout title="Note e-POWER Reference">
+<BaseLayout title="Note e-POWER Wiki">
   <section class="hero">
-    <h1>JDM Nissan Note e-POWER (HE12) Reference</h1>
+    <h1>JDM Nissan Note e-POWER (HE12) Wiki</h1>
     <p>
       A community-researched reference for owners of the JDM Nissan Note
       e-POWER, chassis code <strong>HE12</strong> (2016&ndash;2020
@@ -26,6 +33,15 @@ const base = import.meta.env.BASE_URL;
       <a class="button secondary" href={`${base}guides/`}>Browse Guides</a>
       <a class="button secondary" href={`${base}about/`}>About this site</a>
     </div>
+  </section>
+
+  <section class="stats-row" aria-label="Site coverage">
+    {stats.map((stat) => (
+      <a class="stat-card" href={stat.href}>
+        <span class="stat-value">{stat.value}</span>
+        <span class="stat-label">{stat.label}</span>
+      </a>
+    ))}
   </section>
 
   <section id="search">

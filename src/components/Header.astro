@@ -6,17 +6,21 @@ const navItems = [
   { href: `${base}guides/`, label: 'Guides' },
   { href: `${base}about/`, label: 'About' },
 ];
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === base ? path === base || path === base.replace(/\/$/, '') : path.startsWith(href);
 ---
 
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" href={base}>
-      Note e-POWER Reference
+      Note e-POWER Wiki
       <small>JDM HE12 owner's parts &amp; maintenance wiki</small>
     </a>
     <nav class="site-nav" aria-label="Main">
       {navItems.map((item) => (
-        <a href={item.href}>{item.label}</a>
+        <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
       ))}
     </nav>
   </div>
