@@ -1,0 +1,33 @@
+name_en: "NISMO Full-Length Adjustable Sports Suspension Kit (Öhlins-based)"
+name_jp: "NISMO 全長調整式スポーツサスペンションキット"
+system: suspension
+oem_number: "53110-RPE21 (Factory Line catalogue — see notes on price/SKU ambiguity)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["e-POWER NISMO", "e-POWER NISMO S"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Cusco"
+    number: "278 62P CBF (Street Zero)"
+    note: "Coilover for HE12 e-POWER/e-POWER NISMO, ¥128,000 excl. tax — front 6K fixed damping −45 to −15 mm, rear 4K 14-way full-length adjustable −30 to −5 mm (Cusco official PDF)"
+  - brand: "Espelir"
+    number: "ESN-3185"
+    note: "Lowering springs listed for e-POWER NISMO specifically — search-snippet only, verify with Espelir before buying"
+confidence: probable
+sources:
+  - url: "https://www.nismo.co.jp/news_list/2020/news_flash/20004.html"
+    note: "NISMO official news release (2020): kit explicitly compatible with e-POWER NISMO and e-POWER NISMO S; Öhlins-based, 20-stage damping, ride height −30 to −10 mm, ¥371,000 excl. tax at launch"
+  - url: "https://www.nismo.co.jp/products/factory_line/sports_suspension/index.html"
+    note: "NISMO Factory Line catalogue: p/n 53110-RPE21, ¥497,750 incl. tax, spring rates F49/R58 N/mm — row labelled 'Note E12 NISMO S' only; e-POWER coverage under this exact SKU unconfirmed"
+price_jpy: 497750
+notes: >-
+  The closest thing to a factory suspension upgrade for this car — NISMO's
+  own Öhlins-based full-length adjustable kit, fitted via NISMO Omori
+  Factory / Performance Centers. Two official NISMO sources confirm it
+  exists for the e-POWER NISMO/NISMO S; what's murky is the current price
+  and SKU (¥371,000 excl. tax in the 2020 launch release vs ¥452,500
+  excl. tax in the current catalogue, whose row only says "Note E12
+  NISMO S") — confirm both with a NISMO dealer before budgeting. Note:
+  NISMO's separate "S-tune suspension kit" product line does NOT cover
+  the Note at all, despite what the name suggests.

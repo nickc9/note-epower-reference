@@ -33,17 +33,27 @@ the electronic parking brake arrived with the next-generation E13.
   disc work and the self-adjuster must be set correctly for a working
   handbrake — a reasonable job to leave to a garage; use the parts
   entries to source components yourself.
-- No parking-brake adjustment spec (lever clicks / cable tension) was
-  found in public sources — flagged as an open item pending factory
-  service manual data.
+- **Parking brake adjustment (forum-grade):** one owner DIY log (petrol
+  E12, which shares the lever/cable/drum architecture) describes a **10 mm
+  adjuster nut through an opening at the base of the handbrake lever**
+  inside the centre console, with the manufacturer target quoted as
+  **11–12 clicks of lever travel**. Single source, not HE12-labelled, and
+  not from a factory manual — treat as a starting point, and remember
+  over-tightening drags the drums and cooks the shoes. A factory-manual
+  spec for the HE12 specifically is still wanted.
 
 ## Brake fluid
 
 - Spec: **Nissan No.2500 (DOT 3)** — genuine 0.5 L bottle is KN100-30005.
-- No official change interval was found for the HE12; owner and workshop
-  convention in Japan is **every 2 years, with shaken**. Brake fluid
+- Interval: **Nissan does not publish one online.** We checked Nissan's
+  own fluid FAQ for this chassis — it gives capacities and types but
+  explicitly defers change timing to the paper Maintenance Note booklet
+  that ships with the car. Owner and workshop convention in Japan is
+  **every 2 years, with shaken**, and that's what we suggest. Brake fluid
   absorbs moisture regardless of mileage — if your import's history is
-  unknown, change it as part of your baseline service.
+  unknown, change it as part of your baseline service. (If you have the
+  メンテナンスノート booklet for an HE12, the official figure is a wanted
+  contribution.)
 - DOT 4 is generally backward-compatible with DOT 3 systems, but no
   Nissan statement for this chassis was found — using No.2500/DOT 3 is
   the zero-argument choice.
@@ -55,8 +65,14 @@ the electronic parking brake arrived with the next-generation E13.
 
 ## ⚠️ The regen-braking fuse quirk
 
-One owner-documented quirk worth knowing (single source, unconfirmed): a
-blown **rear brake-light fuse also disables regenerative braking** — the
-car needs the brake-light circuit healthy to allow regen. If your regen /
-one-pedal behaviour suddenly weakens, check the brake lights and their
-fuse before assuming something expensive.
+One owner-documented quirk worth knowing (single source, forum-grade): a
+blown **brake-light (stop lamp) fuse also disables regenerative braking** —
+the car needs the brake-light circuit healthy to allow regen. Per the same
+owner's teardown, it's a **10 A low-profile fuse living in a "hidden"
+fuse box** under a bento-box-style cover that the owner's manual doesn't
+document (the HE12 has four fuse box locations in total; the manual shows
+only two — dash area and luggage-room by the 12V battery, plus six 10 A
+Micro2 fuses by the engine-bay jump terminal). If your regen / one-pedal
+behaviour suddenly weakens, check the brake lights and this fuse before
+assuming something expensive. Note the HE12 uses two fuse form factors —
+low-profile mini and the smaller Micro2 — so keep spares of both.

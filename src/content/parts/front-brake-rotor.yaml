@@ -1,7 +1,7 @@
 name_en: "Front Brake Rotors — 260 mm vented"
 name_jp: "フロントブレーキローター"
 system: brakes
-oem_number: "260 mm × 22 mm vented (genuine 40206-xxxx number unconfirmed)"
+oem_number: "40206-3U80A"
 superseded_numbers: []
 applicability:
   chassis: ["HE12", "SNE12", "E12", "NE12"]
@@ -14,8 +14,10 @@ alternatives:
   - brand: "Brembo"
     number: "09.C543.11"
     note: "EU-market catalogue entry for Note E12 1.2; source of the dimension spec, not JDM-specific"
-confidence: probable
+confidence: verified
 sources:
+  - url: "https://www.amayama.com/en/part/nissan/402063u80a"
+    note: "Amayama genuine catalogue: 'Rotor-Disc Brake, front' — fitment list includes Nissan Note with HR12DE engine (browser-verified July 2026); ~AU$166/each ex-Japan"
   - url: "https://www.amazon.co.jp/dp/B091PKHDQ8"
     note: "Dixcel SD rotor 3212111 for Note E12/NE12/HE12 'NISMO含む' (incl. NISMO)"
   - url: "https://paypaymall.yahoo.co.jp/store/yabumoto/item/sd3212111s-011/"
@@ -27,6 +29,9 @@ sources:
 notes: >-
   One rotor spans the whole E12/HE12 family including NISMO/NISMO S (same
   Dixcel number covers all). Minimum (wear-limit) thickness 20 mm from a
-  nominal 22 mm. The genuine Nissan rotor part number could not be confirmed
-  from any fetched source — order Dixcel by the numbers above, or genuine via
-  a dealer using your frame number.
+  nominal 22 mm. Genuine number 40206-3U80A confirmed via the Amayama
+  genuine catalogue (Note + HR12DE fitment — the fitment table doesn't
+  distinguish petrol E12 from e-POWER HE12, but the Dixcel evidence shows
+  the whole family shares one rotor). Sold per rotor — order two. A
+  different candidate, 40206-EG000, circulates online: it's a 350Z/370Z/
+  Murano rotor, wrong for this car.

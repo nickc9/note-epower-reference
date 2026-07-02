@@ -1,0 +1,34 @@
+name_en: "Reduction Gear Oil — Nissan Matic Fluid S"
+name_jp: "減速機オイル（マチックフルードS）"
+system: fluids
+oem_number: "KLE27-00002 (20 L pail — see notes; no small-pack number found)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Aisin"
+    number: "AFW+"
+    note: "Cited by JP owners as an accepted equivalent per Aisin's fitment chart (owner claim, not independently verified against the chart)"
+confidence: probable
+sources:
+  - url: "https://minkara.carview.co.jp/userid/2288020/car/2719682/7363975/note.aspx"
+    note: "Owner change log: Matic Fluid S specified, ~1.94 L capacity"
+  - url: "https://minkara.carview.co.jp/userid/1562029/car/2747933/7791968/note.aspx"
+    note: "Independent owner log: same fluid and capacity; drain plug torque 34.5 N·m (forum-grade)"
+  - url: "https://www.monotaro.com/p/7184/8194/"
+    note: "MonoTaRO: KLE27-00002 = genuine Matic Fluid S 20 L, 'hybrid-vehicle dedicated' — application list shows older Nissan hybrids, not Note e-POWER explicitly; showed 'sales suspended' at fetch"
+  - url: "https://www.amayama.com/en/part/nissan/kle2700002"
+    note: "Amayama genuine catalogue: exists as genuine Nissan 'OIL, TRANSMISSION', 20 kg pail (~AU$579 ex-Japan) — no fitment list held (browser-verified July 2026)"
+price_jpy: 2000
+notes: >-
+  The e-POWER has no CVT and no transmission — the EM57 motor drives the
+  wheels through a single-speed reduction gear holding ~1.94 L of Nissan
+  Matic Fluid S. The fluid NAME is solid (4 independent owner logs agree);
+  KLE27-00002 is the only genuine product code found and only comes as a
+  20 L pail, so in practice you buy ~2 L dispensed at a dealer/shop
+  (owner-reported dealer job cost ¥6,000-9,000 all-in) or use Aisin AFW+.
+  Do NOT use CVT fluid (NS-2/NS-3) — that's the petrol Note. Nissan
+  publishes no change interval; see the guide for what owner teardowns
+  found. Price shown is the ~2 L fluid portion of a shop job, not the pail.

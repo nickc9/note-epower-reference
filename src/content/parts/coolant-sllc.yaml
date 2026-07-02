@@ -10,13 +10,17 @@ applicability:
 alternatives:
   - brand: "Nissan Genuine"
     number: "KQ301-34102"
-    note: "Concentrate (原液) form — part number seen in a single listing title only, unconfirmed"
+    note: "Concentrate (原液) form, 2 L, blue — verified across 5+ independent retailer listings (Rakuten, Yahoo, Yodobashi). Top-ups on the premixed system should still use premixed."
 confidence: verified
 sources:
   - url: "https://www.amazon.co.jp/dp/B01CRQ3L1O"
     note: "Nissan genuine S-LLC premixed KQ301-34002, blue, 2 L, freeze point −36°C, do not dilute"
   - url: "https://item.rakuten.co.jp/auc-n2factory/kq301-34002/"
     note: "Independent retailer listing, same part number and spec"
+  - url: "https://www.yodobashi.com/product/100000001008335920/"
+    note: "Concentrate KQ301-34102 (2 L, blue) — one of 5+ consistent independent listings verifying the concentrate number"
+  - url: "https://faq2.nissan.co.jp/faq/show/13789?category_id=628&site_domain=default"
+    note: "Official Nissan FAQ: engine circuit 6.78 L (incl. 0.85 L reservoir), inverter circuit 4.16 L (incl. 0.57 L reservoir)"
 price_jpy: 1500
 notes: >-
   Used in BOTH of the e-POWER's separate cooling circuits: engine (~6.78 L)

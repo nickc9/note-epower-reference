@@ -1,7 +1,7 @@
 name_en: "12V Auxiliary Battery — LN2 (X, Medalist, NISMO, NISMO S)"
 name_jp: "補機バッテリー（LN2）"
 system: electrical
-oem_number: "LN2 (EN/DIN format, 60 Ah class) — genuine Nissan number unconfirmed"
+oem_number: "24410-0542R (factory Atlas-branded LN2 EFB — probable, see notes)"
 superseded_numbers: []
 applicability:
   chassis: ["HE12", "SNE13"]
@@ -31,13 +31,21 @@ sources:
     note: "Panasonic official fitment chart: e-POWER non-S grades = N-370LN2/PA (LN2)"
   - url: "https://shop.kts-web.com/products/enj-375ln2-is-qq-e-9400k"
     note: "GS Yuasa ENJ-375LN2-IS sold explicitly for Note e-POWER HE12"
+  - url: "https://superstart.net.nz/products/nissan-note-e-power-hybrid-auxiliary-battery-2017-onwards"
+    note: "NZ retailer, Note e-POWER 2017-2020 auxiliary battery page: 'Replaces: 12V L2 60Ah 510A(EN), 24410-0542R, EFB60-LN2...' — matches the number an owner reported stamped on the factory battery"
+  - url: "https://www.vasques.com/blog/toritsuke/post-4094/"
+    note: "JP shop replacement log: failed factory Atlas battery replaced with Brite Star EFB60-LN2, ¥20,000 + ¥2,200 labour"
 price_jpy: 15000
 notes: >-
   The e-POWER uses a European EN/DIN (LN) format battery, NOT a JIS size —
   unlike petrol E12 Notes. The LN2 fitment class for non-S grades is verified
   (Nissan FAQ + Panasonic chart agree); the genuine Nissan part number itself
-  (24410-xxxxx) could not be confirmed, and one forum post reports the factory
-  battery as Atlas-branded "24410 0542R" (unconfirmed). Use an EFB /
+  is 24410-0542R at "probable" confidence: an owner's factory battery is
+  stamped with it and an independent retailer cross-references it, but it's
+  not in Amayama's JDM Nissan catalogue (checked July 2026) and the same
+  number appears in Renault-alliance catalogues — likely an alliance-shared
+  number rather than a JDM catalogue one. In practice order any LN2 EFB
+  below rather than chasing the genuine part. Use an EFB /
   idling-stop-rated battery — standard flooded types are not suited to
   e-POWER charge cycling. Located under the boot floor with a hydrogen vent
   hose that MUST be reconnected — see the replacement guide. One retailer

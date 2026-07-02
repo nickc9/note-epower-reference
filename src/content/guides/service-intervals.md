@@ -19,10 +19,10 @@ draft: false
 | Engine air filter | Inspect at 12-month service, replace when dirty | — | Convention |
 | Cabin filter | 12 months (Pitwork recommendation) | — | Manufacturer rec. |
 | Coolant (both circuits, SLLC) | First change **7 years / 160,000 km**, then every 4 years / 80,000 km | — | Verified (2 Nissan sources) |
-| Brake fluid (Nissan No.2500, DOT 3) | ~2 years (commonly done with shaken) | — | **Unconfirmed** — no official interval found; owner convention |
+| Brake fluid (Nissan No.2500, DOT 3) | ~2 years (commonly done with shaken) | — | Convention — Nissan's FAQ defers the official figure to the paper Maintenance Note booklet |
 | Spark plugs (precious-metal, 22401-ED815) | **100,000 km** | — | Verified — see below |
 | Drive/accessory belt | **None fitted** — not a maintenance item on the e-POWER | — | Verified (electric pumps & A/C) |
-| Reduction gear fluid (Matic Fluid S, ~1.94 L) | No published interval — "consult dealer" | — | Capacity official; interval unconfirmed |
+| Reduction gear fluid (Matic Fluid S, ~1.94 L) | None published — sealed-for-life per Nissan; owners who change preventively do so ~50,000 km | — | No official interval; owner practice forum-grade |
 | 12V battery | Condition-based, typically 3-5 years | — | Owner logs |
 | Wiper refills | Yearly (JP convention) | — | Convention |
 

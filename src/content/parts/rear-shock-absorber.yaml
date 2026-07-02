@@ -1,0 +1,30 @@
+name_en: "Rear Shock Absorber (standard grades — NISMO number unconfirmed)"
+name_jp: "リアショックアブソーバー"
+system: suspension
+oem_number: "E6210-A16E"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["S", "X", "Medalist (NISMO/NISMO S unconfirmed — dedicated tune)"]
+  years: "2016-2020"
+alternatives:
+  - brand: "KYB"
+    number: "Lowfer Sports Plus (rear set)"
+    note: "Fitted by an e-POWER NISMO S owner replacing leaking rear shocks at ~18,000 km / 30 months"
+confidence: probable
+sources:
+  - url: "https://minkara.carview.co.jp/userid/915740/car/3268798/8124335/note.aspx"
+    note: "Owner log: number confirmed via Nissan dealer lookup; oil leak found at shaken pre-inspection; lower bolt 98 N·m"
+  - url: "https://minkara.carview.co.jp/userid/990787/car/3117993/6819296/note.aspx"
+    note: "Separate e-POWER NISMO S owner: rear shock oil leak at ~18,000 km — symptom data point (went aftermarket, no OEM number given)"
+price_jpy: 10000
+notes: >-
+  Probable, with an important caveat: this number came from a dealer lookup
+  reported in an owner log, and the post doesn't state the car's grade. The
+  NISMO/NISMO S have a factory-dedicated suspension tune, so their dampers
+  may carry a different number — treat E6210-A16E as the standard-grade
+  part and have a dealer confirm against your frame number before ordering
+  for a NISMO. Not listed in Amayama (checked July 2026). Rear shock oil
+  leaks are a recurring HE12 owner report, often found at shaken
+  inspection. Lower bolt 98 N·m, upper mount nut 20 N·m (third-party
+  torque table + owner log agreement — not factory-verified).

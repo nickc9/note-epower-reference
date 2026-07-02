@@ -24,10 +24,15 @@ draft: false
 The e-POWER has **two fully separate cooling circuits**, each with its own
 reservoir, piping, and its own **electric** water pump:
 
-1. **Engine circuit** (~6.78 L) — cools the HR12DE generator engine.
+1. **Engine circuit** — approx. **6.78 L including a 0.85 L reservoir**
+   (official Nissan figure) — cools the HR12DE generator engine.
    Electric pump (no belt).
-2. **Inverter circuit** (~4.16 L) — cools the power electronics.
+2. **Inverter circuit** — approx. **4.16 L including a 0.57 L reservoir**
+   (official Nissan figure) — cools the power electronics.
    Electric pump 21581-5WZ0B.
+
+So when checking levels: the **larger reservoir (0.85 L) belongs to the
+engine circuit, the smaller (0.57 L) to the inverter circuit.**
 
 Both use the same fluid: **Nissan Super Long Life Coolant** (blue,
 premixed KQ301-34002). Nissan says genuine S-LLC only, no leak-stop

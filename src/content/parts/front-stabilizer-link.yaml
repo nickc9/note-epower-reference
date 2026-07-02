@@ -1,0 +1,30 @@
+name_en: "Front Stabilizer Link (sway bar end link)"
+name_jp: "フロントスタビライザーリンク（スタビリンク）"
+system: suspension
+oem_number: "54618-JX00A"
+superseded_numbers:
+  - "54618-ED000"
+applicability:
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives:
+  - brand: "GMB"
+    number: "1002-03801"
+    note: "Aftermarket link sold against the OEM number for E11/E12/HE12 Notes"
+confidence: verified
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/54618jx00a"
+    note: "Amayama genuine catalogue: 'Rod Assy-Connecting, Stabilizer' — fitment list includes Nissan Note with HR12DE engine (browser-verified July 2026)"
+  - url: "https://store.shopping.yahoo.co.jp/solltd/54618jx00aset-008.html"
+    note: "Retailer cross-reference for Note incl. HE12; also lists the older 54618-ED000 number"
+  - url: "https://ritemas.jp/item/id/GSL-N-06-2-08/4841P57ET3"
+    note: "Independent retailer cross-reference, same number, front L/R common"
+price_jpy: 3000
+notes: >-
+  The classic knocking-over-bumps wear part — one link fits left and right,
+  order two. The NISMO/NISMO S front stabilizer BAR itself is factory-uprated
+  ("フロント強化" per Nissan's own spec sheet) and its bar part number is
+  still unconfirmed, but no source suggests the LINKS differ by grade —
+  retailer fitment lists cover all HE12 grades. Upper and lower nuts
+  39 N·m (third-party torque table, not factory-verified).
