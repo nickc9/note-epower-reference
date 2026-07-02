@@ -1,0 +1,26 @@
+name_en: "Drive / Accessory Belt — NOT FITTED to the e-POWER"
+name_jp: "補機ベルト（e-POWERには存在しません）"
+system: engine
+oem_number: "N/A — the e-POWER HR12DE has no accessory belt"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives: []
+confidence: verified
+sources:
+  - url: "https://car.motor-fan.jp/tech/10006143"
+    note: "Motor-Fan Tech engineering article: the e-POWER HR12DE's defining external feature is the complete absence of belt-driven auxiliaries"
+  - url: "https://www.shiromahhacars.com/syuri_264.html"
+    note: "Repair-shop diagnostic write-up: engine-side water pump on the HE12 e-POWER is electric, 'unlike conventional belt-driven types'"
+  - url: "https://item.rakuten.co.jp/fujiautoparts/92600-5wk0b-01/"
+    note: "A/C compressor 92600-5WK0B for HE12/SNE12 is an electric unit — no belt drive"
+notes: >-
+  A deliberate "anti-part" entry: there is no fan belt, alternator belt, or
+  A/C belt on this engine. Both water pumps and the A/C compressor are
+  electric, and charging is handled by the traction generator. If a garage
+  quotes you for a "fan belt" on your e-POWER, they're looking at the PETROL
+  Note E12 (same HR12DE engine code, different accessory hardware — belts
+  like 7PK1125 belong to that car, not yours). Belt inspection simply isn't
+  a maintenance item on this vehicle.

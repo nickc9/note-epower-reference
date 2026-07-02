@@ -15,15 +15,16 @@ alternatives:
   - brand: "ATS"
     number: "R7A58-15"
     note: "Magnetic neodymium drain bolt, M12 P1.25 H12; listings target Serena/March HR12DE (same engine family)"
-confidence: probable
+confidence: verified
 sources:
+  - url: "https://www.amayama.com/en/part/nissan/1112801m00"
+    note: "Amayama genuine catalogue: PLUG, BLIND — Nissan Note in fitment list, supersedes to 11128-01M0B (browser-verified July 2026)"
   - url: "https://www.nissanpartsdeal.com/parts/nissan-plug-drain~11128-01m00.html"
     note: "Confirms part number and supersession to 11128-01M0B across Nissan small-engine models"
   - url: "https://www.amazon.co.jp/dp/B00ALO2DAK"
     note: "PIAA B22 aftermarket drain plug states genuine cross-ref 11128-01M00 for Nissan"
 price_jpy: 300
 notes: >-
-  Thread M12 x P1.25. No source explicitly names HE12 + this number together,
-  but the drain plug spec is consistent across the whole HR12DE/EM57 engine
-  family (Note/March/Serena) — flagged probable rather than verified.
-  Tightening torque approx. 35 N·m (owner-sourced, see oil change guide).
+  Thread M12 x P1.25. Confirmed on the Amayama genuine catalogue with the
+  Note in the fitment list. Tightening torque approx. 35 N·m (owner-sourced,
+  see oil change guide).

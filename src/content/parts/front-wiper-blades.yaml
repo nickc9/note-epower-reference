@@ -1,9 +1,9 @@
 name_en: "Front Wiper Blades — 650 mm driver / 300 mm passenger"
 name_jp: "フロントワイパーブレード"
 system: wipers
-oem_number: "28890-5WJ0A (driver blade; confirmed for E12, probable for HE12)"
+oem_number: "28890-3VA0D (driver blade, current number)"
 superseded_numbers:
-  - "28890-3VA0D"
+  - "28890-5WJ0A"
 applicability:
   chassis: ["HE12", "E12", "NE12", "SNE12"]
   grades: ["all"]
@@ -23,6 +23,8 @@ alternatives:
     note: "Water-repellent (撥水) coat version of the same refill"
 confidence: verified
 sources:
+  - url: "https://www.amayama.com/en/part/nissan/288903va0d"
+    note: "Amayama genuine catalogue: 'Blade Assembly-Windshield Wiper for Nissan Note' — current replacement for discontinued 28890-5WJ0A (browser-verified July 2026)"
   - url: "https://faq2.nissan.co.jp/faq/show/13810?category_id=67&site_domain=default"
     note: "Official Nissan FAQ: driver 650 mm / passenger 300 mm, all E12-family incl. e-POWER"
   - url: "https://www.amazon.co.jp/-/en/dp/B0DG2NHNNK"
@@ -32,7 +34,7 @@ sources:
 price_jpy: 3500
 notes: >-
   Blade lengths verified from Nissan's own FAQ and identical across all
-  grades including NISMO/NISMO S. Confidence refers to the lengths and the
-  aftermarket numbers; the genuine 28890-5WJ0A number is only explicitly
-  confirmed for the petrol E12 — very likely shared, but treat as probable
-  for HE12 when ordering genuine.
+  grades including NISMO/NISMO S. The old 28890-5WJ0A is discontinued; the
+  Amayama genuine catalogue confirms 28890-3VA0D as its current replacement
+  for the Note. Passenger-side genuine number still unconfirmed — order
+  aftermarket by length (300 mm) or ask a dealer.

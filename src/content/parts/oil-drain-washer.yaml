@@ -13,8 +13,10 @@ alternatives:
   - brand: "Pitwork"
     number: "AY740-NS002"
     note: "Cited as cross-reference to 11026-01M02 in JP retailer compatibility notes"
-confidence: probable
+confidence: verified
 sources:
+  - url: "https://www.amayama.com/en/part/nissan/1102601m02"
+    note: "Amayama genuine catalogue: GASKET — Nissan Note in fitment list, Pitwork AY740NS002 listed as its cross-reference (browser-verified July 2026)"
   - url: "https://www.monotaro.com/p/2942/4763/"
     note: "MonotaRO lists 11026-01M02 as the Nissan oil pan drain gasket"
   - url: "https://item.rakuten.co.jp/dreammax/184/"
@@ -22,6 +24,6 @@ sources:
 price_jpy: 100
 notes: >-
   Single-use — replace at every oil change (both owner DIY sources are
-  explicit about this). 12 mm ID x 18 mm OD x 3.0 mm thick; a very widely
-  shared Nissan washer across decades of models. Not explicitly tied to HE12
-  by any one source, hence probable.
+  explicit about this). 12 mm ID x 18 mm OD x 3.0 mm thick. Confirmed on the
+  Amayama genuine catalogue with the Note in the fitment list and the Pitwork
+  cross-reference matching.

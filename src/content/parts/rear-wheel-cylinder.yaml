@@ -1,0 +1,27 @@
+name_en: "Rear Wheel Cylinder"
+name_jp: "リアホイールシリンダー"
+system: brakes
+oem_number: "44100-3HA0B"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives:
+  - brand: "Miyako"
+    number: "WC-N500"
+    note: "Listing titled for Note HE12, Nov 2016 – Nov 2020 (exact e-POWER production span)"
+  - brand: "Seiken"
+    number: "130-50703"
+    note: "Cross-referenced to 44100-3HA0B — cross-ref seen in search summaries only, unconfirmed"
+confidence: probable
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/441003ha0b"
+    note: "Amayama genuine catalogue: CYLINDER ASSEMBLY-REAR WHEEL — Nissan Note in fitment list, HR12DE among listed engines (browser-verified July 2026)"
+  - url: "https://item.rakuten.co.jp/d-box/mbacwcn500-1-6/"
+    note: "Miyako WC-N500 aftermarket cylinder listed for Note HE12 2016.11–2020.11"
+price_jpy: 4000
+notes: >-
+  Common left/right. A leaking wheel cylinder shows up as fluid staining
+  inside the drum backing plate and a dropping reservoir level — check at
+  every shoe inspection.

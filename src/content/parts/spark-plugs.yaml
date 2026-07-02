@@ -1,0 +1,35 @@
+name_en: "Spark Plugs (HR12DE) — set of 3"
+name_jp: "スパークプラグ"
+system: engine
+oem_number: "22401-ED815"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "NGK"
+    number: "LZKAR6AP-11"
+    note: "OE-equivalent NGK plug — cross-listed against 22401-ED815 on the Amayama genuine catalogue page"
+  - brand: "NGK"
+    number: "LKAR6ARX-11P (stock #95674)"
+    note: "Premium RX line (ruthenium + platinum) — the plug JDM owners routinely fit at replacement; multiple listings explicitly for HE12 e-POWER"
+confidence: verified
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/22401ed815"
+    note: "Amayama genuine catalogue: PLUG, SPARK — Nissan Note in fitment list, NGK LZKAR6AP11 cross-listed (browser-verified July 2026)"
+  - url: "https://www.nissanpartsdeal.com/parts/nissan-plug-spark~22401-ed815.html"
+    note: "Genuine Nissan 22401-ED815 listing"
+  - url: "https://yabumoto1.jp/shopdetail/000000082138/"
+    note: "JP retailer: 'ノート HE12 プレミアムRXプラグ 3本 e-POWER NGK 95674 LKAR6ARX-11P'"
+  - url: "https://minkara.carview.co.jp/userid/3459709/car/3303931/12838006/parts.aspx"
+    note: "Owner parts review cross-referencing genuine 22401-ED815 to LKAR6ARX-11P"
+price_jpy: 2500
+notes: >-
+  Three plugs (3-cylinder). M12 × 1.25 thread, 26.5 mm reach, 14 mm hex.
+  Factory plug is a precious-metal (long-life) type — replacement interval
+  100,000 km, NOT the 20,000 km you'll see on generic Nissan schedules for
+  conventional plugs (see the spark plug guide for the evidence). Torque
+  ~20 N·m (probable, not from a factory table); gap 1.0–1.1 mm (single
+  non-JP source — unconfirmed; precious-metal plugs come pre-gapped and
+  should not be re-gapped).

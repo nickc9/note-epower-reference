@@ -1,0 +1,32 @@
+name_en: "Front Brake Rotors — 260 mm vented"
+name_jp: "フロントブレーキローター"
+system: brakes
+oem_number: "260 mm × 22 mm vented (genuine 40206-xxxx number unconfirmed)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12", "E12", "NE12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives:
+  - brand: "Dixcel"
+    number: "PD3212111 / SD3212111"
+    note: "PD (plain) / SD (slotted) types, front pair — listings explicitly state fitment incl. NISMO and NISMO S"
+  - brand: "Brembo"
+    number: "09.C543.11"
+    note: "EU-market catalogue entry for Note E12 1.2; source of the dimension spec, not JDM-specific"
+confidence: probable
+sources:
+  - url: "https://www.amazon.co.jp/dp/B091PKHDQ8"
+    note: "Dixcel SD rotor 3212111 for Note E12/NE12/HE12 'NISMO含む' (incl. NISMO)"
+  - url: "https://paypaymall.yahoo.co.jp/store/yabumoto/item/sd3212111s-011/"
+    note: "Same Dixcel number listed 'NISMO/NISMO S含む' — explicitly naming NISMO S"
+  - url: "https://www.bremboparts.com/europe/en/catalogue/nissan-note-e12-1-2/000058980-1"
+    note: "Dimensions: 260 mm OD, 22 mm thickness, 20 mm minimum thickness, ventilated"
+  - url: "https://www.zimmermann-bremsentechnik.eu/zimmermann-brake-disc-for-nissan-note-e12-front.html?language=en"
+    note: "Independent corroboration of 260/22/20 mm spec, 4×100 PCD"
+notes: >-
+  One rotor spans the whole E12/HE12 family including NISMO/NISMO S (same
+  Dixcel number covers all). Minimum (wear-limit) thickness 20 mm from a
+  nominal 22 mm. The genuine Nissan rotor part number could not be confirmed
+  from any fetched source — order Dixcel by the numbers above, or genuine via
+  a dealer using your frame number.

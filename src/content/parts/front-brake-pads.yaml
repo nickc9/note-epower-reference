@@ -1,0 +1,38 @@
+name_en: "Front Brake Pads"
+name_jp: "フロントブレーキパッド"
+system: brakes
+oem_number: "AY040-NS167 (Pitwork; genuine D1060-5WK0A / D1060-1HH00 family)"
+superseded_numbers:
+  - "AY040-NS140"
+  - "AY040-NS149"
+  - "AY040-NS157"
+  - "AY040-NS161"
+  - "AY040-NS168"
+  - "AY040-NS182"
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Akebono"
+    number: "AN-761WK"
+    note: "Sold as OEM-supplying manufacturer (メーカー純正採用) pad for the HE12 1200cc e-POWER"
+  - brand: "NISMO"
+    number: "D1060-1HA00"
+    note: "S-tune performance pad from NISMO's accessory catalogue — listed for Note E12 all grades (全車), ambient–500°C. An upgrade, not the factory pad"
+confidence: probable
+sources:
+  - url: "https://store.shopping.yahoo.co.jp/autopartssunrise/ns140bp-1-01007.html"
+    note: "Cross-ref list (AY040-NS140/149/157/161/167/168/182, D1060-1HH00/5WK0A) explicitly for chassis HE12/SNE12, 2016/11–2020/11, HR12DE-EM57"
+  - url: "https://www.amazon.co.jp/dp/B078LXN6WP"
+    note: "Pitwork AY040-NS167 front pad listing for Note"
+  - url: "https://www.nismo.co.jp/products/web_catalogue/brake/s-tune_brake_pad.html"
+    note: "NISMO official catalogue: S-tune pad D1060-1HA00 fits Note E12 all grades — indirect evidence the caliper/pad interface is shared across grades"
+price_jpy: 5000
+notes: >-
+  All evidence says the front caliper/pad hardware is SHARED across all HE12
+  grades including NISMO and NISMO S — aftermarket catalogues list one number
+  "incl. NISMO/NISMO S", and NISMO's own upgrade pad fits all grades. What
+  remains unresolved: whether the factory NISMO friction compound differs
+  within the same physical part. Genuine dealer price not found; ~¥5,000
+  is a typical Pitwork set price.

@@ -28,15 +28,18 @@ alternatives:
     note: "Cross-reference sheet ties 15208-65F00 to AY100-NS004"
 confidence: verified
 sources:
+  - url: "https://www.amayama.com/en/part/nissan/1520865f00"
+    note: "Amayama genuine catalogue: FILTER ASSEMBLY, OIL — out of production, JDM original replacement 15208-ED50A, Pitwork AY100NS004 cross-listed (browser-verified July 2026)"
   - url: "https://www.norauto.jp/c/maintenance/oilfilter/pf307j"
     note: "AC Delco cross-reference: 15208-65F00 = AY100-NS004 (Nissan)"
   - url: "https://www.nissanpartsdeal.com/parts/nissan-oil-filter~15208-65f0e.html"
     note: "US Nissan catalogue confirms 15208-65F0E as the current superseding number for the 65F00/65F01/65F0A-D family"
 price_jpy: 900
 notes: >-
-  Approx. 75 mm tall x 70 mm OD, M20 x P1.5 thread. JDM retailers consistently
-  use 15208-65F00 (with Pitwork AY100-NS004 as the genuine cross-ref) for the
-  HE12; US catalogues show 15208-65F0E as the latest supersession of the same
-  filter family. Fitment of this filter family to the HE12 HR12DE+EM57 is
-  confirmed by 3+ independent JDM-specific listings (BLITZ, HKS, Pitwork
-  retailers). If ordering genuine from a JP vendor, ask for AY100-NS004.
+  Approx. 75 mm tall x 70 mm OD, M20 x P1.5 thread. 15208-65F00 is out of
+  production; the Amayama (JDM) genuine catalogue lists **15208-ED50A** as
+  its current original replacement, while US catalogues supersede to
+  15208-65F0E — same filter family, different regional chains. Easiest
+  orders: Pitwork AY100-NS004 from a JP vendor, or 15208-ED50A genuine.
+  Fitment to the HE12 HR12DE+EM57 confirmed by 3+ independent JDM-specific
+  listings (BLITZ, HKS, Pitwork retailers).

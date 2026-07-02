@@ -1,0 +1,26 @@
+name_en: "Brake Fluid — Nissan No.2500 (DOT 3)"
+name_jp: "ブレーキフルード No.2500"
+system: brakes
+oem_number: "KN100-30005 (0.5 L)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12", "E12", "NE12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives:
+  - brand: "Any reputable DOT 3"
+    number: "DOT 3"
+    note: "Nissan specifies No.2500 (DOT 3). DOT 4 is chemically backward-compatible as a general industry matter, but no Nissan statement for this chassis was found — flagged, not endorsed"
+confidence: verified
+sources:
+  - url: "https://www.amazon.co.jp/dp/B01GQ0VXOY"
+    note: "Nissan genuine No.2500 brake fluid, DOT 3, 0.5 L, KN100-30005"
+  - url: "https://www.yodobashi.com/product/100000001007124233/"
+    note: "Independent retailer confirms: No.2500 BF-3 DOT-3 500 ml, KN100-30005"
+price_jpy: 800
+notes: >-
+  "No.2500" = Nissan's designation for a dry boiling point of ≥250°C
+  (comfortably above the DOT 3 minimum). Larger sizes exist in the
+  KN100-30xxx family (e.g. 1 L / 18 L) but weren't individually verified.
+  Change interval: no official figure found — owner/workshop convention is
+  ~every 2 years, typically with shaken. Fluid absorbs moisture; err early.

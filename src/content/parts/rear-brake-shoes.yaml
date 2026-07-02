@@ -1,0 +1,26 @@
+name_en: "Rear Brake Shoes (Drum)"
+name_jp: "リアブレーキシュー"
+system: brakes
+oem_number: "AY360-NS106 (Pitwork)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12", "NE12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives:
+  - brand: "MK Kashiyama"
+    number: "KN1264"
+    note: "Cross-referenced to the AY360-NS106/NS093/NS103/NS096 family; stated compatible with Note E12/HE12 2012.9–2021.8"
+confidence: probable
+sources:
+  - url: "https://www.amazon.co.jp/dp/B078LTBN6G"
+    note: "Pitwork AY360-NS106 rear shoe listing for Note"
+  - url: "https://store.shopping.yahoo.co.jp/carpart83/sn11681020he12.html"
+    note: "Aftermarket lining kit listing explicitly titled for Note E12/HE12 drum brakes — confirms HE12 uses this drum-shoe family"
+price_jpy: 6000
+notes: >-
+  NISMO and NISMO S use the same leading-trailing rear drums as standard
+  grades (the rear-disc "NISMO S" you may read about is the old petrol E12改).
+  AY360-NS106's HE12 fitment is one catalogue level short of verified — an
+  HE12-titled listing exists for the equivalent aftermarket lining kit but
+  not for the Pitwork number itself.

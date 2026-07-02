@@ -1,0 +1,21 @@
+name_en: "Inverter Circuit Electric Water Pump"
+name_jp: "インバーター用電動ウォーターポンプ"
+system: engine
+oem_number: "21581-5WZ0B"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives: []
+confidence: probable
+sources:
+  - url: "https://store.shopping.yahoo.co.jp/partsportap-2nd/a202402152.html"
+    note: "Used-parts listing: 'ノート E-POWER X HE12 インバーター ウォーター ポンプ 電動 21581-5WZ0B HR12DE'"
+price_jpy: 15000
+notes: >-
+  The inverter cooling circuit has its own dedicated electric pump (the
+  engine circuit's water pump is ALSO electric on the e-POWER — there is no
+  belt-driven anything on this engine). Single-source part number; a failed
+  pump typically announces itself with a cooling-system warning and a
+  CONSULT fault code. Price shown is a used-part guide price.

@@ -1,0 +1,22 @@
+name_en: "Rear Brake Drum"
+name_jp: "リアブレーキドラム"
+system: brakes
+oem_number: "43206-ED300"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives: []
+confidence: probable
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/43206ed300"
+    note: "Amayama genuine catalogue: DRUM, BRAKE REAR — Nissan Note in fitment list, HR12DE among listed engines (browser-verified July 2026)"
+  - url: "https://www.amazon.co.jp/dp/B01LYWRKLU"
+    note: "Genuine Nissan rear brake drum 43206-ED300 retail listing"
+notes: >-
+  Amayama's genuine catalogue lists the Note (and HR12DE) in this drum's
+  fitment, which resolves an earlier conflict: a second candidate number
+  (43206-3HA2A) exists in the genuine catalogue but shows no fitment data at
+  all. If ordering genuine, quote your frame number (HE12-xxxxxx) to the
+  vendor to be certain. Drums rarely need replacement — shoes wear first.

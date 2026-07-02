@@ -1,0 +1,27 @@
+name_en: "Coolant — Nissan Super Long Life Coolant (premixed, blue)"
+name_jp: "スーパーロングライフクーラント（S-LLC）"
+system: fluids
+oem_number: "KQ301-34002 (2 L premixed)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "SNE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Nissan Genuine"
+    number: "KQ301-34102"
+    note: "Concentrate (原液) form — part number seen in a single listing title only, unconfirmed"
+confidence: verified
+sources:
+  - url: "https://www.amazon.co.jp/dp/B01CRQ3L1O"
+    note: "Nissan genuine S-LLC premixed KQ301-34002, blue, 2 L, freeze point −36°C, do not dilute"
+  - url: "https://item.rakuten.co.jp/auc-n2factory/kq301-34002/"
+    note: "Independent retailer listing, same part number and spec"
+price_jpy: 1500
+notes: >-
+  Used in BOTH of the e-POWER's separate cooling circuits: engine (~6.78 L)
+  and inverter (~4.16 L). Nissan's FAQ says genuine S-LLC only, and no
+  leak-stop additives. Premixed 50% — do not dilute further. Interval:
+  first change 7 yr / 160,000 km, then every 4 yr / 80,000 km. See the
+  cooling system guide before attempting a DIY change — the inverter
+  circuit has an electric pump and no publicly documented bleed procedure.

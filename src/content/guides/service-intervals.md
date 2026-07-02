@@ -20,7 +20,8 @@ draft: false
 | Cabin filter | 12 months (Pitwork recommendation) | — | Manufacturer rec. |
 | Coolant (both circuits, SLLC) | First change **7 years / 160,000 km**, then every 4 years / 80,000 km | — | Verified (2 Nissan sources) |
 | Brake fluid (Nissan No.2500, DOT 3) | ~2 years (commonly done with shaken) | — | **Unconfirmed** — no official interval found; owner convention |
-| Spark plugs | See below | — | **Conflicting** |
+| Spark plugs (precious-metal, 22401-ED815) | **100,000 km** | — | Verified — see below |
+| Drive/accessory belt | **None fitted** — not a maintenance item on the e-POWER | — | Verified (electric pumps & A/C) |
 | Reduction gear fluid (Matic Fluid S, ~1.94 L) | No published interval — "consult dealer" | — | Capacity official; interval unconfirmed |
 | 12V battery | Condition-based, typically 3-5 years | — | Owner logs |
 | Wiper refills | Yearly (JP convention) | — | Convention |
@@ -36,15 +37,16 @@ circuits**, both using Nissan Super Long Life Coolant. Owners service both
 together. Don't let a garage quote you for "a coolant change" without
 asking which circuit they mean.
 
-## The spark plug question (unresolved)
+## The spark plug question (RESOLVED — it's 100,000 km)
 
-Nissan's generic maintenance page says plugs every 20,000 km — but that's
-for conventional plugs. Multiple Note e-POWER owners report their car's
-maintenance note (メンテナンスノート) specifies **iridium plugs with a
-100,000 km interval**, and plugs pulled at 120,000 km showing minimal
-wear. We could not read the model-specific maintenance note directly, so
-this stays flagged. If your car came with its maintenance booklet, the
-plug interval printed there settles it — and we'd love a photo via GitHub.
+Nissan's generic maintenance page says plugs every 20,000 km — but
+Nissan's own FAQ distinguishes **conventional plugs** (not a scheduled
+item; that generic figure) from **platinum/iridium-family plugs**, which
+are a **100,000 km scheduled item**. The HE12's factory plug
+(22401-ED815) is a precious-metal type, so 100,000 km applies —
+corroborated by an owner log pulling still-serviceable original plugs at
+exactly 100,000 km. Full evidence in the
+[spark plug guide](../spark-plug-replacement/).
 
 ## Legal inspections (for cars still in Japan / fresh imports)
 
