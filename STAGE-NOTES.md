@@ -23,10 +23,13 @@
   (forum-grade 10 mm nut / 11-12 clicks, E12-sourced), fuse box detail
   (10 A low-profile stop-lamp fuse in undocumented "hidden" box), 12V
   battery number (24410-0542R at probable).
-- **Phase 4 — candidate scope:** body/exterior parts (mirrors, clips,
-  mudguards), interior (mats, Recaro care for NISMO S), horn, drivetrain
-  mounts, community seeding/publicising the site, closing remaining
-  unresolved items below.
+- **Phase 4 — research done, integration NOT started (session budget
+  checkpoint hit at ~78% before writing began — deliberately stopped here,
+  see "Phase 4 research findings" below and the two archived files in
+  `docs/research/`). A fresh session should pick up integration next:
+  write the new parts YAML + guides, update existing entries per the
+  findings below, draft community-seeding content, then re-update this
+  file's Status/Key-facts/Unresolved sections and ship.
 
 ## Key facts already established (don't re-derive)
 
@@ -86,7 +89,78 @@
   X/S H11 halogen; full bulb table in lighting guide; LH headlamp
   assembly 26060-5WK5A/5WK5D ~AU$1,000+/side (grade spec unconfirmed)
 
-## Unresolved items (Phase 4 candidates)
+## Phase 4 research findings (NOT YET INTEGRATED into parts/guides — do that first in the next session, using these plus the full archived files)
+
+Two research files: `docs/research/research-phase4-body-interior.md` and
+`docs/research/research-phase4-unresolved-sweep.md`. Highlights:
+
+- **Door mirror cover** (accessory) 9637S-RNE20 — verified, 2 independent
+  fetched sources (NISMO + Nissan shop). **Mirror housing** 96301-5VA0C —
+  probable, one fetched retailer source naming HE12 (needs a 2nd source to
+  upgrade).
+- **Interior trim clip** 01553-05933 — probable, one JDM retailer, genuine
+  Note E12 clip (there are likely several distinct clip numbers by
+  location — this is only one of them).
+- **Mudguards** F38E0-xxxxx family, e.g. F38E0-6XJ1C for one e-POWER paint
+  code — probable/verified pattern, but exact SKU depends on the car's
+  paint code, so present as a family, not a single number.
+- **Floor mats** 74900-RNE22 for e-POWER — verified via NISMO's own
+  catalogue (directly fetched); NOT NISMO-S-exclusive, it's an accessory
+  across the whole E12/HE12 range.
+- **Rejected (two-NISMO-S trap correctly caught):** reinforced engine
+  mounts 11210/11220/11360-RSK30 are for the **petrol** NISMO S (HR16DE)
+  only — one source explicitly said "excluding e-Power versions." Do not
+  use these numbers for the e-POWER car.
+- **Still unresolved:** horn number (25620-5WK0A recurs in searches but
+  was never confirmed by a direct fetch — treat as unverified, not a
+  citable number yet); e-POWER engine/motor/reduction-gear mount numbers
+  (biggest remaining gap — Amayama 403'd on every attempt; a WebSearch-
+  synthesized "11220-5WK0A" claim could not be independently verified and
+  should NOT be used); Recaro seat material for NISMO S (existence of the
+  option is verified via 3 articles, but none stated the actual fabric —
+  don't guess leather vs Alcantara).
+- **Useful lead for later:** the "-5WK0A" suffix is confirmed (via a
+  directly-fetched washer-tank listing) to be a real DAA-HE12-specific
+  Nissan numbering block — worth checking against future mount-number
+  candidates.
+- **Passenger wiper blade** — partial progress: 28895-3VA0E's own retail
+  listing title explicitly says "アシスト" (assist/passenger side), which
+  is real new evidence it's the passenger-side part — but it's a refill
+  insert, not a full blade assembly, and still has no confirmed HE12
+  fitment data. No genuine rear (305 mm) blade number found at all, still
+  aftermarket-only (NWB GR41-TN30G).
+- **Rear drum 43206-3HA2A vs 43206-ED300 — possible confidence reversal,
+  needs lead verification before touching the live entry.** New research
+  found 43206-3HA2A looks like the more Note-E12-specific number (two
+  independent retailers, plus sibling revisions 3HA1B/3HA9A cross-listed
+  as mutual replacements), while ED300's own primary fitment turned out
+  to be the older Tiida Latio platform — Note only appears in a broad
+  shared-parts list for ED300. This is a signal to re-examine, not a
+  confirmed flip; verify directly (Amayama browser check on 3HA2A) before
+  changing `rear-brake-drum.yaml`.
+- **Traction battery — RESOLVED for voltage/cells/weight.** A genuine
+  Nissan Motor Co. PDF (dated April 2020, "Note e-POWER E12-type" battery
+  removal/recycling manual for licensed dismantlers) was directly fetched
+  and states **292 V, 4 modules (80 cells), 41.8 kg pack weight** — a
+  strong primary source. The 1.47 kWh capacity figure itself is still NOT
+  confirmed by any primary document (evidence suggests Nissan never
+  published an exact kWh figure at 2016 launch) — keep that specific
+  number at probable/attributed-to-FAQ, but the V/cell/weight figures can
+  move to verified with this new source cited.
+- **Headlamp assembly by grade** — still unresolved. Only sibling
+  revisions of the known number were found (26060-5WK5B, -5WK5D); no
+  right-side 26010- counterpart and no grade/bulb-type mapping found.
+- **NISMO suspension kit — RESOLVED for grade applicability.** NISMO's own
+  live current parts catalogue has an explicit grade-applicability matrix
+  showing 53110-RPE21 (¥497,750 incl. / ¥452,500 excl. tax) is listed for
+  **e-POWER NISMO and e-POWER NISMO S specifically**, not just petrol —
+  update `nismo-sports-suspension-kit.yaml` confidence accordingly. Price
+  history vs the 2020 ¥371,000 launch figure is still unresolved
+  (web.archive.org was unreachable this session) — treat current price as
+  ¥452,500 excl. tax and drop the "ambiguity" framing, just note it may
+  have risen since 2020.
+
+## Unresolved items (carried into next session)
 
 1. OEM front strut, coil spring, strut mount, bump stop numbers for HE12
    e-POWER (biggest gap; NISMO tune means standard numbers can't be
@@ -96,20 +170,29 @@
    number unknown)
 4. Inverter-circuit coolant bleed procedure (CONSULT pump activation?) —
    still the most-wanted contribution
-5. Passenger/rear genuine wiper blade numbers (28895-3VA0E refill is a
-   candidate only)
-6. Rear drum 43206-3HA2A vs ED300 relationship
+5. Genuine passenger wiper blade ASSEMBLY number and genuine rear wiper
+   blade number — still not found (see Phase 4 findings above for the
+   partial refill-side lead)
+6. Rear drum 43206-3HA2A vs ED300 — needs a direct Amayama browser check
+   on 3HA2A before deciding whether to flip the live entry (see Phase 4
+   findings above)
 7. Spark plug gap for 22401-ED815 (1.0-1.1 mm single non-JP source)
 8. NISMO factory pad compound question (no evidence either way)
 9. Reduction gear crush washer p/n; factory torque specs generally
    (current table is aggregator-grade)
-10. Traction battery capacity primary source (FAQ 5325 is JS-gated;
-    browser domain was blocked this session — try again with permission
-    or find the VEJ press release, incj.co.jp was unresolvable/defunct)
+10. Traction battery: exact kWh figure (1.47) still lacks a primary
+    source, even though V/cells/weight are now resolved (see above)
 11. Genuine LED vs halogen headlamp assembly number mapping by grade
-12. NISMO kit current price/SKU confirmation (¥371k vs ¥452.5k excl.)
+12. NISMO kit price history vs 2020 launch figure (grade applicability
+    now resolved, see above)
 13. LN1 genuine battery number (base S grade — low priority)
 14. Rear room lamp bulb type; fuse box second source
+15. Horn genuine part number (25620-5WK0A unverified, don't cite yet)
+16. e-POWER engine/motor/reduction-gear mount numbers — new biggest gap
+    alongside front struts; Amayama 403'd every attempt this session
+17. Recaro seat material for NISMO S (option existence verified, fabric
+    type not confirmed — don't guess for the care guide)
+18. Second source for mirror housing 96301-5VA0C to upgrade from probable
 
 ## Practical notes
 
