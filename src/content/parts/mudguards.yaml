@@ -1,0 +1,29 @@
+name_en: "Genuine Mudguards / Splash Guards (body-color set)"
+name_jp: "マッドガード"
+system: body
+oem_number: "F38E0-xxxxx (color-code family — e.g. F38E0-6XJ1C for Aurora Flare Blue Pearl e-POWER)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
+  grades: ["all"]
+  years: "2012-2020"
+alternatives: []
+confidence: probable
+price_jpy: 18565
+sources:
+  - url: "https://minkara.carview.co.jp/userid/3108070/car/3445505/12519096/parts.aspx"
+    note: "Owner parts review, directly fetched: genuine Nissan mudguard, part F38E0-6XJ1C, Aurora Flare Blue Pearl (P), fitted to a Note e-POWER (4WD/AUTECH-spec) at a Nissan dealer, ¥18,565, front only ('AUTECH仕様はフロントのみ付けることが出来るみたいなので' — AUTECH spec can apparently only take the front set)"
+notes: >-
+  Genuine JDM mudguards use the F38E0-xxxxx family with a paint-color-code
+  suffix (NOT the US-market 999J2-xxxxx family, which is a different
+  regional catalogue code for different vehicles entirely — do not cross
+  those). F38E0-6XJ1C is confirmed by a real owner purchase/fitment on a
+  Note e-POWER, in Aurora Flare Blue Pearl; other colors will have a
+  different suffix (e.g. F38E0-6XJ2C was seen for a different color in the
+  same retailer family), so match to the car's own paint code before
+  ordering. The reviewer's car is 4WD/AUTECH-spec and could only fit the
+  FRONT set — whether 2WD grades can fit front+rear together is not
+  confirmed either way. Checked directly against Amayama for both a
+  generic (F38E0-5WJ0A) and this e-POWER-specific number — neither is
+  stocked there, so this rests on the retailer/owner-review corroboration
+  rather than a genuine-catalogue fitment hit; keep at probable.

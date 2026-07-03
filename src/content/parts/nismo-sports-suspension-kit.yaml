@@ -14,20 +14,27 @@ alternatives:
   - brand: "Espelir"
     number: "ESN-3185"
     note: "Lowering springs listed for e-POWER NISMO specifically — search-snippet only, verify with Espelir before buying"
-confidence: probable
+confidence: verified
 sources:
   - url: "https://www.nismo.co.jp/news_list/2020/news_flash/20004.html"
     note: "NISMO official news release (2020): kit explicitly compatible with e-POWER NISMO and e-POWER NISMO S; Öhlins-based, 20-stage damping, ride height −30 to −10 mm, ¥371,000 excl. tax at launch"
   - url: "https://www.nismo.co.jp/products/factory_line/sports_suspension/index.html"
-    note: "NISMO Factory Line catalogue: p/n 53110-RPE21, ¥497,750 incl. tax, spring rates F49/R58 N/mm — row labelled 'Note E12 NISMO S' only; e-POWER coverage under this exact SKU unconfirmed"
-price_jpy: 497750
+    note: "NISMO Factory Line catalogue: p/n 53110-RPE21, ¥497,750 incl. tax (¥452,500 excl.), spring rates F49/R58 N/mm — row labelled 'Note E12 NISMO S' only"
+  - url: "https://www.nismo.co.jp/products/web_catalogue/model_nismo_note.html"
+    note: "NISMO's official grade-applicability matrix for the Note lineup, directly fetched: Sports Suspension Kit shows ○ (available) for NISMO S, e-POWER NISMO, AND e-POWER NISMO S (plain NISMO: not available) — first-party confirmation the SKU covers e-POWER, not just petrol (browser-verified July 2026)"
+price_jpy: 452500
 notes: >-
   The closest thing to a factory suspension upgrade for this car — NISMO's
   own Öhlins-based full-length adjustable kit, fitted via NISMO Omori
-  Factory / Performance Centers. Two official NISMO sources confirm it
-  exists for the e-POWER NISMO/NISMO S; what's murky is the current price
-  and SKU (¥371,000 excl. tax in the 2020 launch release vs ¥452,500
-  excl. tax in the current catalogue, whose row only says "Note E12
-  NISMO S") — confirm both with a NISMO dealer before budgeting. Note:
-  NISMO's separate "S-tune suspension kit" product line does NOT cover
-  the Note at all, despite what the name suggests.
+  Factory / Performance Centers. NISMO's current live grade-applicability
+  table confirms 53110-RPE21 covers the e-POWER NISMO and e-POWER NISMO S
+  specifically (not just the petrol car) — the earlier "Note E12 NISMO S"
+  catalogue-row ambiguity is resolved. Current price ¥452,500 excl. tax /
+  ¥497,750 incl., vs ¥371,000 excl. tax quoted at the 2020 launch — this
+  may be a genuine price rise since 2020, or the 2020 figure may have been
+  introductory; the historical Wayback Machine snapshot needed to date
+  that precisely wasn't reachable during research, so treat ¥452,500 as
+  "as of July 2026" rather than a fixed number. Confirm with a NISMO
+  dealer before budgeting. Note: NISMO's separate "S-tune suspension kit"
+  product line does NOT cover the Note at all, despite what the name
+  suggests.

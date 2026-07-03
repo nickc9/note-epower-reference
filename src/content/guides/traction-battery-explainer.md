@@ -17,10 +17,19 @@ draft: false
 energy between the HR12DE generator engine and the EM57 drive motor, and
 also powers the electric A/C compressor. It is *not* a Leaf battery —
 the e-POWER pack is tiny by EV standards because it's a buffer, not a
-range tank. Figures widely attributed to Nissan's own FAQ for the HE12:
-**about 1.47 kWh, 292 V, 80 cells** (we could not render the FAQ page
-directly to quote it — treat as probable; JP press commonly rounds it
-to "1.5 kWh").
+range tank. **292 V nominal, 4 modules / 80 cells, 41.8 kg pack weight**
+are verified directly from Nissan's own "Note e-POWER (E12-type)"
+lithium-ion battery removal/recovery manual (dated April 2020, published
+for licensed dismantlers under Japan's End-of-Life Vehicle Recycling
+Law). The commonly-quoted **~1.47 kWh** capacity figure is still not
+confirmed by any primary Nissan document — Nissan's 2016 launch press
+kit deliberately withheld a capacity spec (contemporary journalists'
+"~1.5 kWh" figures were their own back-of-envelope estimates from a
+"1/20th the size of the Leaf pack" quote, not a cited Nissan number), so
+treat 1.47 kWh as a widely-repeated derived figure rather than a verified
+one. Note: the same manual states the *system* runs at up to ~350V via a
+boost converter to the motor inverter — that's not the battery pack's
+own 292V rating, don't conflate the two.
 
 **The 12V auxiliary battery** (boot floor, LN2 size on NISMO/NISMO S)
 boots the e-POWER system and runs conventional electrics. Key mechanism,

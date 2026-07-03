@@ -1,0 +1,27 @@
+name_en: "Genuine NISMO Floor Mat Set (5-piece)"
+name_jp: "フロアマット（NISMOロゴ）"
+system: body
+oem_number: "74900-RNE22"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives: []
+confidence: verified
+sources:
+  - url: "https://www.nismo.co.jp/products/web_catalogue/interior/floor_mat.html"
+    note: "NISMO official parts catalogue, directly fetched: four Note E12/HE12-generation SKUs — 74900-RNE20 (all grades, through Nov 2016), -RNE21 (Nov 2016+, gasoline), -RNE22 (Nov 2016+, e-POWER, excl. cold-climate & 4WD), -RNE23 (e-POWER cold-climate spec, excl. 4WD); all shown production-discontinued; 5-mat set, NISMO logo, red stitching"
+  - url: "https://shop.nissan.co.jp/product/detail/3698"
+    note: "Nissan Online Shop, directly fetched: same 74900RNE21/74900RNE22 numbers, 'Note (E12) post-facelift, all grades, excluding e-POWER cold-climate spec', aluminum NISMO logo plate, ¥30,250"
+  - url: "https://www.nismo.co.jp/products/web_catalogue/model_nismo_note.html"
+    note: "NISMO's grade-applicability matrix: Floor Mat shows ○ (available) for NISMO, NISMO S, e-POWER NISMO, and e-POWER NISMO S — not gated to any one grade (browser-verified July 2026)"
+price_jpy: 30250
+notes: >-
+  This is a NISMO-branded dealer accessory (embroidered/plated NISMO logo,
+  red stitching), orderable for any Note E12/HE12-generation grade — not
+  factory-standard-only on NISMO S. Pick the SKU by facelift timing and
+  powertrain: RNE22 is the plain e-POWER number (this car, unless it's the
+  cold-climate spec, which is RNE23). No source found stating whether NISMO
+  S ships with this mat set as standard equipment vs. as an orderable
+  option like on any other grade.

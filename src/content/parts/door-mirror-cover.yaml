@@ -1,0 +1,28 @@
+name_en: "NISMO Carbon Door Mirror Cover"
+name_jp: "カーボンドアミラーカバー"
+system: body
+oem_number: "9637S-RNE20"
+superseded_numbers:
+  - "9637S-RNZ00"
+applicability:
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
+  grades: ["all"]
+  years: "2014-2020"
+alternatives: []
+confidence: verified
+sources:
+  - url: "https://www.nismo.co.jp/products/web_catalogue/exterior/carbon_door_mirror_cover.html"
+    note: "NISMO official parts catalogue: dry-carbon mirror cover, part 9637S-RNE20, for Note E12 ('14/10~) & E13 (browser-verified July 2026); superseded 9637S-RNZ00 (pre-facelift)"
+  - url: "https://shop.nissan.co.jp/product/detail/2986"
+    note: "Nissan Online Shop, directly fetched: part code 9637SRNE20, fits Note(E12) '14/10~, Leaf (ZE1), Fairlady Z (RZ34); left/right pair, dry carbon, UV-cut clear coat, ¥77,000 tax-in (out of stock at time of check)"
+  - url: "https://www.nismo.co.jp/products/web_catalogue/model_nismo_note.html"
+    note: "NISMO's official grade-applicability matrix for the Note lineup: Carbon Door Mirror Cover shows ○ (available) for NISMO, NISMO S, e-POWER NISMO, AND e-POWER NISMO S (browser-verified July 2026)"
+price_jpy: 77000
+notes: >-
+  A NISMO accessory, not grade-exclusive — NISMO's own current applicability
+  table confirms it's offered across all four NISMO-branded grades including
+  both e-POWER NISMO trims, and it's also shared with the unrelated Leaf
+  (ZE1) and Fairlady Z (RZ34). Sold as a left+right pair. The older
+  9637S-RNZ00 was the pre-facelift (pre Oct 2014) version per NISMO's own
+  catalogue notes; a newer 9637S-RNE30 exists for the following-generation
+  E13 Note and does not fit this car.

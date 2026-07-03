@@ -1,0 +1,34 @@
+name_en: "Door Mirror Assembly — RH/LH"
+name_jp: "ドアミラーASSY"
+system: body
+oem_number: "96301-5VA0C (RH) / 96302-5VA0C (LH)"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12", "E12", "NE12", "SNE12"]
+  grades: ["all"]
+  years: "2012-2021"
+alternatives:
+  - brand: "Murakami"
+    number: "sold against 96301-5VA0C"
+    note: "OEM-manufacturer-equivalent mirror, turn-signal integrated, camera-equipped, sold by ecoparts.jp for Note E12/HE12/NE12/SNE12"
+confidence: verified
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/963015va0c"
+    note: "Amayama genuine catalogue: MIRROR ASSEMBLY, DOOR RH — direct fitment table lists Nissan Note, engine HR12DDR/HR12DE (browser-verified July 2026)"
+  - url: "https://www.amayama.com/en/part/nissan/963025va0c"
+    note: "Amayama genuine catalogue: MIRROR ASSEMBLY, DOOR LH — same fitment table (browser-verified July 2026)"
+  - url: "https://ecoparts.jp/?pid=168711316"
+    note: "Retailer listing for 96301-5VA0C explicitly fitting Note E12/HE12/NE12/SNE12, turn-signal integrated, camera-equipped"
+notes: >-
+  This is the base mirror HOUSING assembly (motor, fold mechanism, glass,
+  turn-signal lamp, blind-spot camera bracket) — the carbon cover sold as a
+  NISMO accessory is a separate part, see door-mirror-cover. Amayama's own
+  fitment table confirms HR12DE among the listed engines, which is the
+  e-POWER generator engine code, so this is not a petrol-only part. Nissan's
+  numbering scheme has many 96301-xxxxx siblings differing by paint color and
+  equipment level (heated glass, camera, turn signal) — 5VA0C/5VA0D
+  (RH/LH pair) is the one directly confirmed by Amayama for this platform;
+  a different color code will have a different suffix. Landed price via
+  Amayama (~AU$1,400 incl. import/GST) is much higher than a JPY retail
+  price would suggest — get a JPY quote from a JDM parts reseller before
+  assuming the Amayama price is representative.

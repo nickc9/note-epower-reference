@@ -36,9 +36,18 @@ notes: >-
   Blade lengths verified from Nissan's own FAQ and identical across all
   grades including NISMO/NISMO S. The old 28890-5WJ0A is discontinued; the
   Amayama genuine catalogue confirms 28890-3VA0D as its current replacement
-  for the Note. Passenger-side genuine blade number still unconfirmed — order
-  aftermarket by length (300 mm) or ask a dealer. A genuine wiper REFILL
-  rubber 28895-3VA0E exists in the Amayama catalogue (~AU$10,
-  browser-checked July 2026) and the 3VA suffix matches this car's blade
-  family, but Amayama lists no fitment data for it — an unconfirmed
-  candidate for the passenger refill only.
+  for the Note. Passenger-side genuine blade ASSEMBLY number still
+  unconfirmed — order aftermarket by length (300 mm) or ask a dealer. A
+  genuine wiper REFILL rubber 28895-3VA0E exists in the Amayama catalogue
+  (~AU$10, browser-checked July 2026) and the 3VA suffix matches this car's
+  blade family; Phase 4 research found MonotaRO's own retail title for this
+  part explicitly reads "リフイル，ワイパー ブレード アシスト" (Refill, Wiper
+  Blade, ASSIST — Nissan's own term for the passenger side), which is
+  real evidence it's the passenger-side refill specifically, nudging it to
+  probable — but it's still only the refill insert, not a full blade
+  assembly, and no source gives HE12-specific fitment for this exact
+  number. Cross-platform pattern-matching (Versa Note's "3WC0 vs 3WC1"
+  driver/assist split) suggests a JDM "28890-3VA1x" assist blade assembly
+  would be the expected sibling of the driver family, but no such number
+  was found in any retailer database — the JDM Note may not follow the
+  same suffix convention.
