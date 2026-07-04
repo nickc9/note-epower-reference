@@ -9,6 +9,7 @@ parts:
   - front-stabilizer-link
   - rear-shock-absorber
   - nismo-sports-suspension-kit
+  - front-wheel-bearing
 torque_specs:
   - fastener: "Front strut upper mount nut (non-reusable)"
     nm: 40
@@ -59,6 +60,7 @@ stiffer from the factory.
 | Coil springs, strut mounts, bump stops | — | Unknown |
 | Lower arm / ball joint / bushings | — | Unknown; ball joint boot is serviceable (aftermarket Ohno Rubber boots used in shop logs) |
 | Rear torsion beam bushings | — | Likely not sold separately by Nissan; a petrol-E12 owner used PowerFlex 11160 poly bushings |
+| Front wheel bearing / hub assembly | 40210-1HA1A or 40210-5RB0A | Unconfirmed — two candidate numbers, conflicting evidence, see parts entry |
 
 That's an honest picture: suspension OEM numbers are the biggest remaining
 gap on this site, mostly because the NISMO-dedicated tune means standard-
@@ -75,6 +77,16 @@ invoice, please contribute them via GitHub.
   rotation.
 - **Knocking/rattling over small bumps** at the front is classically the
   stabilizer links — cheap and easy to replace.
+- **Front (and rear) hub bearing noise** — a speed-dependent roaring/
+  humming that builds above roughly 50 km/h, sometimes with detectable
+  play — is a real, repeatedly-reported issue across multiple independent
+  owners. Reported mileages span a wide range, roughly **36,000 km to
+  140,000+ km**, rather than clustering around any one figure — including
+  a case where a dealer-fitted replacement bearing failed again within
+  another ~10,000 km. Don't wait for a mileage milestone: inspect if you
+  hear the noise, at any mileage. It's a knuckle-removal/press job, not a
+  simple hand-tool swap — see the front wheel bearing parts entry for the
+  part-number ambiguity that still needs resolving.
 
 ## Torque specs — caveat
 

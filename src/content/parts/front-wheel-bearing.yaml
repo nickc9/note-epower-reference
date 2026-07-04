@@ -1,0 +1,61 @@
+name_en: "Front Wheel Bearing / Hub Bearing Assembly"
+name_jp: "フロントハブベアリング"
+system: suspension
+oem_number: "40210-1HA1A or 40210-5RB0A — conflicting evidence on which is correct for HE12, see notes"
+superseded_numbers: []
+applicability:
+  chassis: ["HE12"]
+  grades: ["all"]
+  years: "2016-2020"
+alternatives:
+  - brand: "Generic aftermarket"
+    number: "WBH-222N"
+    note: "Aftermarket cross-reference kit number cited by JP retailers against both OEM candidate numbers below"
+confidence: unconfirmed
+sources:
+  - url: "https://www.amayama.com/en/part/nissan/402105rb0a"
+    note: "Amayama genuine catalogue, browser-verified July 2026: fitment table for 40210-5RB0A lists ONLY Nissan Kicks (engine HR16DE) — no Note fitment shown at all"
+  - url: "https://www.amayama.com/en/part/nissan/402101ha1a"
+    note: "Amayama genuine catalogue, browser-verified July 2026: fitment table for 40210-1HA1A explicitly lists Nissan Note among engines HR12DDR/HR12DE/HR12DR/HR15DE/K9K — HR12DE is the e-POWER generator engine code; no date restriction or supersession notice shown on the page"
+  - url: "https://store.shopping.yahoo.co.jp/net-buhinkan/shubgf2141.html"
+    note: "JP retailer titled 'フロントハブベアリング ニッサン ノート HE12用' — states chassis HE12, engine HR12DE, fitment from Nov 2016 (H28.11〜), cross-ref WBH-222N, ¥6,555 tax-in"
+  - url: "https://yoshiparts.com/parts/nissan-402105RB0A"
+    note: "US Nissan-dealer parts storefront: genuine 'Bearing Assy-Fr' 40210-5RB0A, fitment list gives Nissan Note (2nd Gen, E12) 2012-2020 and Nissan Kicks"
+  - url: "https://yabumoto1.jp/shopdetail/000000182545/"
+    note: "JP retailer titled 'ノート E12 NE12 ハブベアリング フロント...WBH-222N H24.09〜H28.10' — states 40210-1HA1A applies Sept 2012-Oct 2016, i.e. before the HE12/e-POWER launch"
+  - url: "https://minkara.carview.co.jp/userid/106239/car/3216633/7386653/note.aspx"
+    note: "e-POWER owner log: muffler-like noise building over ~10 months, ~36,000 km, quieter on left turns (front bearing symptom); DIY replacement with a press, aftermarket bearing ¥4,719 vs OEM ¥7,579 per side"
+  - url: "https://minkara.carview.co.jp/userid/421986/car/2893797/6537803/note.aspx"
+    note: "e-POWER owner log: front-left bearing play at 46,645 km; dealer fitted a revised 'countermeasure' (対策品) part, which the owner reports failed again after another ~9,642 km"
+  - url: "https://minkara.carview.co.jp/userid/3459709/car/3303931/8060163/note.aspx"
+    note: "e-POWER owner log: roaring noise from front-left, front-right, and rear-right at 97,783 km; ¥41,800 (ex-tax) shop labor for all three corners"
+  - url: "https://minkara.carview.co.jp/userid/2803942/car/2447923/7634322/note.aspx"
+    note: "e-POWER owner log: roaring noise worse above 50 km/h at 123,125 km, no play found on physical shake-test, referred to dealer for lift/motor test"
+  - url: "https://ameblo.jp/met4cdf8/entry-12914522740.html"
+    note: "Mechanic blog: preventive front hub bearing replacement on an explicitly NISMO-spec e-POWER car found noisy on inspection — no OEM part number given"
+notes: >-
+  Evidence conflicts on the correct genuine number for this car. JP specialty
+  retailers explicitly label **40210-5RB0A** as the current HE12 number
+  (Nov 2016 on) and **40210-1HA1A** as the earlier pre-facelift number
+  (Sept 2012-Oct 2016, i.e. before the e-POWER existed) — both cross-reference
+  to the same aftermarket kit, WBH-222N. But Amayama's own genuine-catalogue
+  fitment table says the opposite: 40210-5RB0A's fitment list shows ONLY
+  Nissan Kicks (HR16DE) with no Note at all, while 40210-1HA1A's fitment list
+  explicitly includes Nissan Note under engine HR12DE (the e-POWER generator
+  code), with no date cutoff or supersession notice shown. Until this is
+  resolved — ideally via a dealer parts lookup against your own frame number,
+  or by reading the number stamped on the bearing you're replacing — treat
+  this as an open question rather than ordering blind. Whichever number is
+  correct, no source gives a distinct NISMO/NISMO S part; front brake type and
+  wheel spec are already confirmed identical across all HE12 grades (see the
+  suspension reference guide), so the bearing is likely shared too, but this
+  is inference, not a confirmed fitment hit. The ABS wheel-speed sensor is
+  probably integrated into the hub bearing unit, as is standard on modern
+  Nissans with front discs, though no source names this explicitly for either
+  candidate number. Real owner-reported failures exist (speed-dependent
+  roaring/humming, sometimes detectable play) spanning roughly 36,000 km to
+  over 140,000 km — a genuine issue, but not a tight "100,000 km" cluster;
+  don't wait for a mileage milestone, inspect if you hear the noise. This is
+  a press/knuckle-removal job, not a simple hand-tool swap — budget for a
+  professional or an at-home hydraulic press, plus new one-time-use hub
+  fasteners.
