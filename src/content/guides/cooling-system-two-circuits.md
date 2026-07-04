@@ -52,8 +52,8 @@ requirement surfaced in research.
 controlled, and refilling plausibly requires commanding the pump to run
 (CONSULT diagnostic tool) to purge air — but **no owner DIY log or public
 document confirming the bleed procedure could be found**. Every owner log
-we found had this circuit done at the dealer. That pattern, plus an
-air-locked inverter pump being an expensive mistake, means our current
+found had this circuit done at the dealer. That pattern, plus an
+air-locked inverter pump being an expensive mistake, means the current
 recommendation is:
 
 > **Have the coolant change done at a Nissan dealer or hybrid-capable

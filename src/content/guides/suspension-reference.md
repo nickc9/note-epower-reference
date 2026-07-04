@@ -49,7 +49,7 @@ their 22 mm front bar is rated "185% of stock" against a base e-POWER but
 only "135% of stock" against an e-POWER NISMO — the NISMO bar really is
 stiffer from the factory.
 
-## Wear parts — what we know so far
+## Wear parts — what's known so far
 
 | Part | Number | Status |
 |---|---|---|

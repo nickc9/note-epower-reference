@@ -39,7 +39,7 @@ petrol E12 NISMO S (17-inch, 205/45R17) — a different car. See the
 Door-placard value: **230 kPa front / 210 kPa rear** (two independent
 owner sources quoting the placard). Caveat: not confirmed from a
 NISMO-specific placard photo — check your own door jamb sticker; if it
-differs, trust the sticker (and tell us via GitHub).
+differs, trust the sticker (and contribute it via GitHub).
 
 ## No spare wheel
 

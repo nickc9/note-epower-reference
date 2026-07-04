@@ -25,7 +25,7 @@ factory-documented):
 - **Generic OBD-II apps** (Torque, Car Gauge Pro, Car Scanner): basic
   engine data works for some owners, sometimes only after manually
   forcing the protocol to **ISO 14230-4 "Fast Init"** instead of auto.
-  A UK owners-club claim (which we couldn't re-verify directly) says
+  A UK owners-club claim (not independently re-verified) says
   Nissan gates deep ECU access behind its CONSULT protocol — consistent
   with what owners experience.
 - **LeafSpy Lite + ELM327** reads the traction battery's **state of
@@ -54,7 +54,7 @@ and the forum consensus across several independent communities is
 uniformly negative — dropped comms, VIN read failures, and at least one
 report of a clone damaging ECM/BCM modules. If you need CONSULT-level
 work outside Japan, a Nissan dealer or a hybrid-capable independent with
-genuine/licensed tooling is the safe route. We don't recommend clones.
+genuine/licensed tooling is the safe route. Clones are not recommended.
 
 ## The emissions-test problem (and the fix)
 

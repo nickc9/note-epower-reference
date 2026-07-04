@@ -84,7 +84,7 @@ reupholstery kit or dedicated seat cover product was found for this seat.
 Nissan's general convention (well-attested across many models, not
 Note-specific) is 25610-xxxxx = high tone, 25620-xxxxx = low tone. A
 specific Note/HE12 number (25620-5WK0A) turns up repeatedly in retailer
-listings, but a direct Amayama check in Phase 4 came back **"Product not
+listings, but a direct Amayama check came back **"Product not
 found"** — so this project is not publishing it. No corresponding
 high-tone number was found at all. Genuine horn numbers for this car
 remain unconfirmed; if you have a dealer invoice, please contribute it.

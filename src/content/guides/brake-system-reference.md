@@ -45,11 +45,12 @@ the electronic parking brake arrived with the next-generation E13.
 ## Brake fluid
 
 - Spec: **Nissan No.2500 (DOT 3)** — genuine 0.5 L bottle is KN100-30005.
-- Interval: **Nissan does not publish one online.** We checked Nissan's
-  own fluid FAQ for this chassis — it gives capacities and types but
-  explicitly defers change timing to the paper Maintenance Note booklet
-  that ships with the car. Owner and workshop convention in Japan is
-  **every 2 years, with shaken**, and that's what we suggest. Brake fluid
+- Interval: **Nissan does not publish one online.** Nissan's own fluid
+  FAQ for this chassis gives capacities and types but explicitly defers
+  change timing to the paper Maintenance Note booklet that ships with
+  the car. Owner and workshop convention in Japan is
+  **every 2 years, with shaken**, and that's the recommended default.
+  Brake fluid
   absorbs moisture regardless of mileage — if your import's history is
   unknown, change it as part of your baseline service. (If you have the
   メンテナンスノート booklet for an HE12, the official figure is a wanted
