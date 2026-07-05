@@ -8,8 +8,12 @@ Live site: https://nickc9.github.io/note-epower-reference/
 
 ## Status
 
-This is a scaffold. Placeholder content (marked `PLACEHOLDER`) stands in for
-real, verified part numbers and guides, which will be added over time.
+Actively maintained. Currently 33 parts and 20 guides covering engine,
+filters, brakes, suspension, electrical, tires/wheels, body, and fluids.
+Every part number carries a confidence flag (verified / probable /
+unconfirmed) tied to its sources — see the
+[About page](https://nickc9.github.io/note-epower-reference/about/) for
+the system.
 
 ## Stack
 
